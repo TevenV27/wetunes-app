@@ -14,7 +14,7 @@ Wetunes es una aplicación web de streaming de música que te permite escuchar t
 - **Explora y descubre:** Encuentra nueva música y artistas con nuestras recomendaciones personalizadas.
 - **Compatibilidad multiplataforma:** Wetunes está disponible en dispositivos móviles y de escritorio.
 
-## Capturas de pantalla
+## Pre-Visualización
 
 ![Captura de pantalla 1](https://i.ibb.co/WpVYR7H/wetunes.png)
 
