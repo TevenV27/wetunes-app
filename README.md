@@ -1,6 +1,6 @@
 # Wetunes - Tu plataforma de streaming de música
 
-![Wetunes Logo](link_to_logo.png)
+![Wetunes Logo](https://i.ibb.co/0JT4Jmg/logo.png)
 
 ## Descripción
 
