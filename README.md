@@ -22,5 +22,5 @@ Wetunes es una aplicación web de streaming de música que te permite escuchar t
 
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias con `npm install`.
-3. Ejecuta la aplicación con `npm start`.
+3. Ejecuta la aplicación con `npm run dev`.
 
