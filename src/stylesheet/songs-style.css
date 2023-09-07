@@ -1,0 +1,72 @@
+p{
+    margin: 0;
+}
+
+.songs-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    overflow-x: hidden;
+
+}
+.songs-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.songs-container::-webkit-scrollbar-track {
+    width: 0px;
+}
+
+.songs-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Ajusta el color del thumb si lo deseas */
+    border-radius: 3px;
+}
+
+.song-box{
+    margin-bottom: 40px;
+    
+}
+
+.genre-name{
+    color: #00C2FF;
+}
+.genre-box{
+    width: 100%;
+
+}
+
+.img-song{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-song{
+    width: 100%;
+    display: flex;
+   
+    gap: 37px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    
+}
+.card-song::-webkit-scrollbar {
+    width: 0px;
+}
+
+.card-song::-webkit-scrollbar-track {
+    width: 0px;
+}
+
+.card-song::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Ajusta el color del thumb si lo deseas */
+    border-radius: 3px;
+}
