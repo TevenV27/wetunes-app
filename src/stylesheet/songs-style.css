@@ -44,29 +44,42 @@ p{
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
+    cursor: pointer;
+}
+.img-box{
+    position: relative;
+
+    .icon-play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
 }
 
-.card-song{
+.section-song{
     width: 100%;
     display: flex;
-   
     gap: 37px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
-
     
 }
-.card-song::-webkit-scrollbar {
+.section-song::-webkit-scrollbar {
     width: 0px;
 }
 
-.card-song::-webkit-scrollbar-track {
+.section-song::-webkit-scrollbar-track {
     width: 0px;
 }
 
-.card-song::-webkit-scrollbar-thumb {
+.section-song::-webkit-scrollbar-thumb {
     background-color: transparent;
     /* Ajusta el color del thumb si lo deseas */
     border-radius: 3px;
+}
+
+.card-song{
+    cursor: pointer;
 }

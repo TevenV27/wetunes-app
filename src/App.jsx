@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Songs from './components/Songs'
+import Artist from './components/Artist'
+
 import './App.css'
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
             </div>
             <div className='artist-box'>
               <h2 className='title-artist'>ARTISTAS</h2>
+              <Artist/>
             </div>
 
           </div>

@@ -14,18 +14,21 @@ export default function Songs() {
 
     return (
         <div className='songs-container'>
-            
+
             {genres.map((genre, genreIndex) => (
                 <article className='song-box' key={genreIndex}>
 
                     <div className='genre-box'>
                         <h2 className='genre-name'>{genre.charAt(0).toUpperCase() + genre.slice(1)}</h2>
                     </div>
-                    
-                    <div className='card-song'>
+
+                    <div className='section-song'>
                         {songsData.filter(song => song.genero === genre).map((song, songIndex) => (
-                            <div key={songIndex}>
-                                <img className='img-song' src={song.imagen} alt="song-image" />
+                            <div className='card-song' key={songIndex}>
+                                <div>
+                                    <img className='img-song' src={song.imagen} alt="song-image" />
+                                
+                                </div>
                                 <div>
                                     <p>{song.nombre}</p>
                                     <p>
