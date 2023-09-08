@@ -1,0 +1,69 @@
+.reproductor {
+  width: 1590px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.reproductor-controls{
+  display: flex;
+  align-items: center;
+}
+
+.information-song{
+  display: flex;
+  align-items: center;
+}
+.reproductor-imagen {
+  width: 67px;
+  height: 67px;
+}
+
+.reproductor-nombre {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.reproductor-tiempo {
+  margin-left: 10px;
+}
+
+.reproductor-barra {
+  cursor: pointer;
+  width: 626px;
+  height: 5px;
+  background: #8A8A8A;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.reproductor-progreso {
+  height: 100%;
+  background: #00C2FF;
+}
+
+.reproductor-duracion {
+  margin-left: 10px;
+}
+
+.reproductor-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  .pause-icon{
+    font-size: 35px;
+  }
+  .play-icon{
+    font-size: 35px;
+  }
+}
+
+.reproductor-volumen {
+  margin-left: 10px;
+  
+}

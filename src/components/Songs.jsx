@@ -9,6 +9,14 @@ export default function Songs() {
         setSongsData(songs);
     }, []);
 
+    // Función para truncar el nombre de la canción o el cantante
+    function truncateString(str, num) {
+        if (str.length <= num) {
+            return str;
+        }
+        return str.slice(0, num) + '...';
+    }
+
     // Extraer una lista única de géneros
     const genres = [...new Set(songsData.map(song => song.genero))];
 
@@ -25,16 +33,24 @@ export default function Songs() {
                     <div className='section-song'>
                         {songsData.filter(song => song.genero === genre).map((song, songIndex) => (
                             <div className='card-song' key={songIndex}>
-                                <div>
+                                <div className='img-song-box'>
                                     <img className='img-song' src={song.imagen} alt="song-image" />
-                                
+                                    <span className="material-symbols-outlined play-song-icon">
+                                        play_circle
+                                    </span>
                                 </div>
-                                <div>
-                                    <p>{song.nombre}</p>
-                                    <p>
-                                        {Array.isArray(song.cantante) ? song.cantante.join(', ') : song.cantante}
-                                    </p>
+                                <div className='description-song'>
+                                    <div className='song-info'>
+                                        <p className='song-name'>{truncateString(song.nombre, 15)}</p>
+                                        <p className='artist-name'>
+                                            {truncateString(Array.isArray(song.cantante) ? song.cantante.join(', ') : song.cantante, 20)}
+                                        </p>
+                                    </div>
+                                    <span className="material-symbols-outlined">
+                                        favorite
+                                    </span>
                                 </div>
+
                             </div>
                         ))}
                     </div>
