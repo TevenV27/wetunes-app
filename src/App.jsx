@@ -19,7 +19,7 @@ function App() {
         </div>
         <button className='b-close-session'> Cerrar Sesión</button>
       </section>
-      <section>
+      <section className='section-section-artist'>
         <div className='container-song-artist'>
           <div className='songs-box'>
 

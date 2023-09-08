@@ -1,41 +1,41 @@
-.main-container{
+.main-container {
   display: flex;
   width: 100vw;
   height: 100vh;
   background-color: rgb(105, 105, 105);
 }
 
-.navigation-box{
+.navigation-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 15px 20px;
   width: 330px;
   height: 100vh;
   background: #1b1b1b;
   align-items: center;
 
 
-  .name-app{
+  .name-app {
     font-weight: 700;
     font-size: 40px;
   }
 
-  .logo-box{
+  .logo-box {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .line-split{
+  .line-split {
     width: 271px;
     color: #00C2FF;
     border: 0.1px solid #00C2FF;
   }
 
 
-  .b-close-session{
+  .b-close-session {
     width: 271px;
     height: 57px;
     border-radius: 5px;
@@ -50,26 +50,27 @@
 }
 
 
-.container-song-artist{
+.container-song-artist {
   display: flex;
   width: calc(100vw - 330px);
-  height: calc(100vh - 97px);
+  height: calc(100vh - 70px);
 }
 
-.songs-box{
+.songs-box {
   width: 1258px;
   height: 100%;
   background: #222222;
 }
 
 
-.rigth-panel-box{
+.rigth-panel-box {
   width: calc(100vw - (330px + 1258px));
   height: 100%;
   background: #1b1b1b;
   overflow-y: scroll;
   padding-bottom: 30px;
-  .user-info-box{
+
+  .user-info-box {
     width: 100%;
     height: 76px;
     background: #101010;
@@ -79,26 +80,27 @@
     font-weight: 700;
     font-size: 22px;
     gap: 22px;
-    .avatar-user{
+
+    .avatar-user {
       width: 53px;
       height: 53px;
       border-radius: 50%;
     }
   }
 
-  .artist-box{
+  .artist-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
-    .title-artist{
+    .title-artist {
       font-weight: 700;
       font-size: 22px;
       color: #00C2FF;
     }
   }
-  
+
 }
 
 .rigth-panel-box::-webkit-scrollbar {
@@ -114,8 +116,63 @@
   border-radius: 3px;
 }
 
-.song-control{
+.song-control {
   width: 100%;
-  height: 97px;
+  height: 70px;
   background: #101010;
+}
+
+@media (max-width: 1400px) {
+
+  .navigation-box {
+    width: 15%;
+    .name-app{
+      font-size: 30px;
+    }
+    .line-split{
+      width: 98%;
+    }
+    .b-close-session{
+      width: 98%;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+
+  .section-section-artist {
+    width: 85%;
+
+    .container-song-artist {
+      width: calc(100%);
+      height: calc(100vh - 70px);
+    }
+
+    .songs-box {
+      width: calc(80%);
+      height: 100%;
+      background: #222222;
+    }
+
+    .rigth-panel-box {
+      width: calc(20%);
+      .user-info-box{
+        font-size: 18px;
+      }
+      .avatar-user{
+        width: 35px;
+        height: 35px;
+      }
+      .title-artist{
+        font-size: 18px;
+      }
+    }
+
+    .song-control{
+      width: 100%;
+    }
+  }
+
+
+
+
 }

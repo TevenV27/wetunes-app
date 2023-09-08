@@ -97,7 +97,6 @@ p{
 
 .section-song::-webkit-scrollbar-thumb {
     background-color: transparent;
-    /* Ajusta el color del thumb si lo deseas */
     border-radius: 3px;
 }
 
@@ -130,4 +129,9 @@ p{
             color: #00C2FF;
         }
     }
+}
+
+@media (max-width: 1400px){
+ 
+    
 }
