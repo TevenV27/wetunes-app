@@ -4,7 +4,7 @@
         "cantante": "Frankie Ruiz",
         "genero": "salsa",
         "duracion": "4:45",
-        "cancion": "https://www.youtube.com/watch?v=S-UBAtyVcGo",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/deseandote.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000579930905-ytj92d-t500x500.jpg"
     },
     {
@@ -12,7 +12,7 @@
         "cantante": "Adalberto Santiago",
         "genero": "salsa",
         "duracion": "5:40",
-        "cancion": "https://www.youtube.com/watch?v=NIjGT0hweTs",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-noche-mas-linda.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000215594085-b3xu7b-t500x500.jpg"
     },
     {
@@ -20,7 +20,7 @@
         "cantante": "Chichi Peralta",
         "genero": "salsa",
         "duracion": "4:32",
-        "cancion": "https://www.youtube.com/watch?v=mk_OGUhjvlw",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/procura.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-D4sGGFRT6MYK-0-t500x500.png"
     },
     {
@@ -28,7 +28,7 @@
         "cantante": "Adolescentes Orquesta",
         "genero": "salsa",
         "duracion": "4:31",
-        "cancion": "https://www.youtube.com/watch?v=pz9O3UeM_o0&pp=ygUIc2Fsc2EgOGQ%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/virgen.mp3",
         "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ac/f9/f2/acf9f236-eae7-023a-120d-6c071797512d/cover.jpg/486x486bb.png"
     },
     {
@@ -36,7 +36,7 @@
         "cantante": "Cold Play",
         "genero": "rock",
         "duracion": "4:18",
-        "cancion": "https://www.youtube.com/watch?v=mlsztO3Fo20",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/hymn-for-the weekend.mp3",
         "imagen": "https://img.wattpad.com/35e66cdc3f77e869eaf3735159cb049cbb9662d6/68747470733a2f2f692e6779617a6f2e636f6d2f35373364653664386531303039303064306234626432343363343030346538622e706e67?s=fit&h=360&w=360&q=80"
     },
     {
@@ -44,7 +44,7 @@
         "cantante": "Imagine Dragons",
         "genero": "rock",
         "duracion": "3:02",
-        "cancion": "https://www.youtube.com/watch?v=lkdYGmzTRco&pp=ygUJZGVtb25zIDhk",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/demons.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000241938427-nscbv9-t500x500.jpg"
     },
     {
@@ -52,7 +52,7 @@
         "cantante": "Imagine Dragons",
         "genero": "rock",
         "duracion": "3:02",
-        "cancion": "https://www.youtube.com/watch?v=70pZL4RIAzE&pp=ygULYmVsaWV2ZXIgOGQ%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/believer.mp3",
         "imagen": "https://paraisodeloslibrosperdidos.files.wordpress.com/2017/10/c-wprtuxyaah9gj.jpg"
     },
     {
@@ -60,7 +60,7 @@
         "cantante": "Queen",
         "genero": "rock",
         "duracion": "2:05",
-        "cancion": "https://www.youtube.com/watch?v=r4akB9hNgK4&pp=ygUTd2Ugd2lsbCByb2NrIHlvdSA4ZA%3D%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/we-will-rock-you.mp3",
         "imagen": "https://cdn.freebiesupply.com/logos/large/2x/we-will-rock-you-logo-black-and-white.png"
     },
     {
@@ -68,7 +68,7 @@
         "cantante": "Romeo Santos",
         "genero": "bachata",
         "duracion": "4:39",
-        "cancion": "https://www.youtube.com/watch?v=AQHnSMd-5Cs&pp=ygUIbmVjaW8gOGQ%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/necio.mp3",
         "imagen": "https://i.scdn.co/image/ab67616d0000b273e9da42890bbd629df1e8f640"
     },
     {
@@ -76,7 +76,7 @@
         "cantante": "Romeo Santos",
         "genero": "bachata",
         "duracion": "3:56",
-        "cancion": "https://www.youtube.com/watch?v=-XgFCQiF1Ds&pp=ygUMaW1pdGFkb3JhIDhk",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/imitadora.mp3",
         "imagen": "https://m.media-amazon.com/images/M/MV5BZmM0OTZkOWItYzY2OC00MzcxLThiNTktM2IxNjY3MTA3ZTVmXkEyXkFqcGdeQXVyMzM0NTc2MTE@._V1_.jpg"
     },
     {
@@ -84,7 +84,7 @@
         "cantante": "Prince Royce",
         "genero": "bachata",
         "duracion": "3:56",
-        "cancion": "https://www.youtube.com/watch?v=-XgFCQiF1Ds&pp=ygUMaW1pdGFkb3JhIDhk",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-carretera.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000196682781-76gjbq-t500x500.jpg"
     },
     {
@@ -92,7 +92,7 @@
         "cantante": "Prince Royce",
         "genero": "bachata",
         "duracion": "4:07",
-        "cancion": "https://www.youtube.com/watch?v=o5v-tYbAAsI&pp=ygUXZWwgYW1vciBxdWUgcGVyZGltb3MgOGQ%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/el-amor-que-perdimos.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000134076854-ha0zhp-t500x500.jpg"
     },
     {
@@ -103,7 +103,7 @@
         ],
         "genero": "reggaeton",
         "duracion": "3:52",
-        "cancion": "https://www.youtube.com/watch?v=AiMLrLaYilU&pp=ygUKdW5hIHZleiA4ZA%3D%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/una-vez.mp3",
         "imagen": "https://f4.bcbits.com/img/a0809846453_10.jpg"
     },
     {
@@ -111,7 +111,7 @@
         "cantante": "Don Omar",
         "genero": "reggaeton",
         "duracion": "4:01",
-        "cancion": "https://www.youtube.com/watch?v=CP-0QR4T6l8&pp=ygUPZGl2YSB2aXJ0dWFsIDhk",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/diva-virtual.mp3",
         "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/VirtualDiva2009.png/220px-VirtualDiva2009.png"
     },
     {
@@ -119,7 +119,7 @@
         "cantante": "Bad Bunny",
         "genero": "reggaeton",
         "duracion": "3:48",
-        "cancion": "https://www.youtube.com/watch?v=7X7llLKQBgo&pp=ygUQZ2F0byBkZSBub2NoZSA4ZA%3D%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gato-de-noche.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-twgMyBVp9zz7UCRI-b40k2A-t500x500.jpg"
     },
     {
@@ -130,7 +130,7 @@
         ],
         "genero": "reggaeton",
         "duracion": "3:22",
-        "cancion": "https://www.youtube.com/watch?v=8a-ZjxWODAQ&pp=ygUHdHVzYSA4ZA%3D%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tusa.mp3",
         "imagen": "https://www.elsoldepuebla.com.mx/incoming/h8e2tr-tusa-.png/ALTERNATES/LANDSCAPE_1140/tusa%20.png"
     },
     {
@@ -142,7 +142,7 @@
         ],
         "genero": "reggaeton",
         "duracion": "3:22",
-        "cancion": "https://www.youtube.com/watch?v=_zCYcmfCBXQ&pp=ygULY2FyYW1lbG8gOGQ%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/caramelo.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-2UdM89ad9xmz-0-t500x500.jpg"
     },
     {
@@ -150,7 +150,7 @@
         "cantante": "Martin Garrix",
         "genero": "electronica",
         "duracion": "5:04",
-        "cancion": "https://www.youtube.com/watch?v=rvbvaVf4_cw&pp=ygUYYW5pbWFscyBtYXJ0aW4gZ2Fycml4IDhk",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/animals.mp3",
         "imagen": "https://cdns-images.dzcdn.net/images/cover/e1573b46aa6255afcf65f63b63aa82da/500x500.jpg"
     },
     {
@@ -161,7 +161,7 @@
         ],
         "genero": "electronica",
         "duracion": "3:58",
-        "cancion": "https://www.youtube.com/watch?v=x8xyg7npc-M&pp=ygUKdHN1bmFtaSA4ZA%3D%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tsunami.mp3",
         "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f2/3f/73/f23f73c7-82e6-a258-278a-900d06da4bb4/8712944442830.jpg/486x486bb.png"
     },
     {
@@ -169,7 +169,7 @@
         "cantante": "Dezko",
         "genero": "electronica",
         "duracion": "3:20",
-        "cancion": "https://www.youtube.com/watch?v=o7qYmuq5Z_w&pp=ygUOZWxlY3Ryb25pY2EgOGQ%3D",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/ascend-dezko.mp3",
         "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/44/64/634464b6-89d3-9763-8487-e9d4031e2c91/197189222627.jpg/1200x1200bf-60.jpg"
     }
 ]

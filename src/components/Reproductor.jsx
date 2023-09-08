@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../stylesheet/reproductor.css';
 
-const Reproductor = ({ imagen, nombre, artista, audio }) => {
+const Reproductor = ({ songName, songArtist, songImage, audioPath, }) => {
+  console.log(songName)
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -53,8 +54,15 @@ const Reproductor = ({ imagen, nombre, artista, audio }) => {
   return (
     <div className="reproductor">
       <div className='information-song'>
-        <img className="reproductor-imagen" src={"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/44/64/634464b6-89d3-9763-8487-e9d4031e2c91/197189222627.jpg/1200x1200bf-60.jpg"} alt={nombre} />
-        <span className="reproductor-nombre">{"Ascend"}</span>
+        <img className="reproductor-imagen" src={songImage} alt={songName} />
+        <div className='box-name-artist'>
+          <p className="reproductor-nombre">{songName}</p>
+          <p className='reproductor-cantante'>
+            {Array.isArray(songArtist) ? songArtist.join(', ') : songArtist}
+          </p>
+        </div>
+
+
       </div>
 
       <div className='reproductor-controls'>
@@ -74,9 +82,18 @@ const Reproductor = ({ imagen, nombre, artista, audio }) => {
             </span>}
         </button>
       </div>
+      <div className='volume-box'>
+        <span class="material-symbols-outlined">
+          volume_up
+        </span>
+        <input type="range" min="0" max="1" step="0.01" defaultValue="1" onChange={e => audioRef.current.volume = e.target.value} className="reproductor-volumen" />
+        <audio ref={audioRef} src={audioPath}></audio>
+        {
+          console.log(songArtist)
 
-      <input type="range" min="0" max="1" step="0.01" defaultValue="1" onChange={e => audioRef.current.volume = e.target.value} className="reproductor-volumen" />
-      <audio ref={audioRef} src={"https://raw.githubusercontent.com/TevenV27/song-server/main/ascend-dezko.mp3"}></audio>
+
+        }
+      </div>
 
     </div>
   );
