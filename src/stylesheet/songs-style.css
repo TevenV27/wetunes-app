@@ -82,7 +82,7 @@ p{
     width: 100%;
     display: flex;
     gap: 37px;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
     
@@ -101,6 +101,8 @@ p{
 }
 
 .card-song{
+
+    
     .img-song-box{
         position: relative;
         width: 200px;
