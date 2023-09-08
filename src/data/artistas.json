@@ -21,5 +21,50 @@
         "nombre": "Karol G",
         "genero": "Reggaeton",
         "imagen" : "https://es.rollingstone.com/wp-content/uploads/2023/08/Karol-G-aposto-por-ella-misma-y-gano.jpg"
+    },
+    {
+        "nombre":"Romeo Santos",
+        "genero":"Bachata",
+        "imagen":"https://imgmedia.larepublica.pe/640x371/larepublica/migration/images/AYRDKVL2PRAJRHBE5R2ST5UIBY.webp"
+    },
+    {
+        "nombre":"Prince Royce",
+        "genero":"Bachata",
+        "imagen":"https://upload.wikimedia.org/wikipedia/commons/f/f7/Prince_Royce_on_Acceso_Total.jpg"
+    },
+    {
+        "nombre":"Queen",
+        "genero":"Rock",
+        "imagen":"https://www.biografiasyvidas.com/biografia/q/fotos/queen.jpg"
+    },
+    {
+        "nombre":"Imagines Dragons",
+        "genero":"Rock",
+        "imagen":"https://www.coca-cola.com/content/dam/onexp/global/central/offerings/coke-studio/artists/2_Imagine_Dragons_by_Eric_Ray_Davidson_GREEN_04_16-9.jpg"
+    },
+    {
+        "nombre":"Cold Play",
+        "genero":"Rock",
+        "imagen":"https://lumiere-a.akamaihd.net/v1/images/coldplay_en_chile_2022_45e7eeb2.jpeg?region=0,0,1280,722&width=960"
+    },
+    {
+        "nombre":"Adolescentes Orquesta",
+        "genero":"Salsa",
+        "imagen":"https://lastfm.freetls.fastly.net/i/u/ar0/79f5855068fe7b518984abe587f987bd.jpg"
+    },
+    {
+        "nombre":"Chichi Peralta",
+        "genero":"Salsa",
+        "imagen":"https://www.clarin.com/img/2022/09/14/chichi-peralta-conocido-por-sus___6OcaDmV5o_2000x1500__1.jpg"
+    },
+    {
+        "nombre":"Adalberto Santiago",
+        "genero":"Salsa",
+        "imagen":"https://portal.andina.pe/EDPfotografia/Thumbnail/2014/10/13/0000265617W.jpg"
+    },
+    {
+        "nombre":"Frankie Ruiz",
+        "genero":"Salsa",
+        "imagen":"https://www.biografiasyvidas.com/biografia/r/fotos/ruiz_frankie_2.jpg"
     }
 ]
