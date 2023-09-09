@@ -98,5 +98,25 @@
     "nombre": "Frankie Ruiz",
     "genero": "Salsa",
     "imagen": "https://www.biografiasyvidas.com/biografia/r/fotos/ruiz_frankie_2.jpg"
+    },
+    {
+        "nombre": "Joe Arroyo",
+        "genero": "Salsa",
+        "imagen": "https://www.elheraldo.co/sites/default/files/articulo/2022/10/31/1a-joe_arroyo.jpg"
+    },
+    {
+        "nombre": "Marc Anthony",
+        "genero": "Salsa",
+        "imagen": "https://www.eluniverso.com/resizer/AhKllsbkJDICVmKd5k1WCzdFeOc=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/OEMU4T3CSBGLNFJQUACWXS763Q.jpg"
+    },
+    {
+        "nombre": "Willie Colon",
+        "genero": "Salsa",
+        "imagen": "https://rtvc-assets-radionacional-v2.s3.amazonaws.com/s3fs-public/senalradio/articulo-noticia/galeriaimagen/lp_-_tp_secrets_-willie_colon2.jpg"
+    },
+    {
+        "nombre": "Luis Enrique",
+        "genero": "Salsa",
+        "imagen": "https://cdn.aarp.net/content/dam/aarp/entertainment/art_music/2017/09/1140-luis-enrique-headshot-esp.jpg"
     }
-    ]
+]

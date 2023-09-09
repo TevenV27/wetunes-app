@@ -285,6 +285,38 @@
     "imagen": "https://i.scdn.co/image/ab67616d0000b273e1afa83bd73aa80c0ff0ee34"
     },
     {
+        "nombre": "Yo No Se Mañana",
+        "cantante": "Luis Enrique",
+        "genero": "salsa",
+        "duracion": "4:19",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/yo-no-se-mañana.mp3",
+        "imagen": "https://i.scdn.co/image/ab67616d0000b2737dc8600bde080d92cd924165"
+    },
+    {
+        "nombre": "La Rebelion",
+        "cantante": "Joe Arroyo",
+        "genero": "salsa",
+        "duracion": "4:40",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-rebelion.mp3",
+        "imagen": "https://radiosalsamatine.com/wp-content/uploads/2020/10/la-rebelion-1-1-1.png"
+    },
+    {
+        "nombre": "Vivir Mi vida",
+        "cantante": "Marc Anthony",
+        "genero": "salsa",
+        "duracion": "4:11",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/vivir-mi-vida.mp3",
+        "imagen": "https://akamai.sscdn.co/uploadfile/letras/albuns/5/4/2/b/562141485956440.jpg"
+    },
+    {
+        "nombre": "Talento de Television",
+        "cantante": "Willie Colon",
+        "genero": "salsa",
+        "duracion": "4:38",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/talento-de-television.mp3",
+        "imagen": "https://i1.sndcdn.com/artworks-qhMeq6VZ5tQxGKuU-75XSHg-t500x500.jpg"
+    },
+    {
     "nombre": "Propuesta Indecente",
     "cantante": "Romeo Santos",
     "genero": "bachata",
