@@ -1,17 +1,54 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../stylesheet/reproductor.css';
 
-const Reproductor = ({ songName, songArtist, songImage, audioPath, }) => {
-  console.log(songName)
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [duration, setDuration] = useState(0);
-  const [currentTime, setCurrentTime] = useState(0);
-
+const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
   const audioRef = useRef(null);
-  const progressRef = useRef(null); // Referencia para el div de progreso
+  const progressRef = useRef(null);
+
+  const savedPlaybackState = localStorage.getItem('playbackState');
+  let initialIsPlaying = false;
+  let initialCurrentTime = 0;
+  if (savedPlaybackState && JSON.parse(savedPlaybackState).songPath === audioPath) {
+    initialIsPlaying = JSON.parse(savedPlaybackState).isPlaying;
+    initialCurrentTime = JSON.parse(savedPlaybackState).currentTime;
+  }
+
+  const [isPlaying, setIsPlaying] = useState(initialIsPlaying);
+  const [duration, setDuration] = useState(0);
+  const [currentTime, setCurrentTime] = useState(initialCurrentTime);
+  const [volume, setVolume] = useState(1.0);
 
   useEffect(() => {
     const audioElement = audioRef.current;
+
+    const handleTimeUpdate = () => {
+      if (audioElement.paused || audioElement.ended) {
+        return;
+      }
+      const current = audioElement.currentTime;
+      const prog = (current / duration) * 100;
+      setCurrentTime(current);
+      if (progressRef.current) {
+        progressRef.current.style.width = `${prog}%`;
+      }
+    };
+
+    const handleAudioEnd = () => {
+      setIsPlaying(false);
+      setCurrentTime(0);
+      if (progressRef.current) {
+        progressRef.current.style.width = `0%`;
+      }
+    };
+
+    const savedVolume = localStorage.getItem('volume');
+    if (savedVolume && audioElement) {
+      audioElement.volume = parseFloat(savedVolume);
+      setVolume(parseFloat(savedVolume));
+    } else {
+      audioElement.volume = 1.0;
+    }
+
     audioElement.addEventListener('timeupdate', handleTimeUpdate);
     audioElement.addEventListener('loadedmetadata', () => {
       setDuration(audioElement.duration);
@@ -19,27 +56,35 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath, }) => {
     audioElement.addEventListener('error', (e) => {
       console.error("Error al cargar el audio:", e);
     });
+    audioElement.addEventListener('ended', handleAudioEnd);
+
+    window.addEventListener('beforeunload', savePlaybackState);
 
     return () => {
       audioElement.removeEventListener('timeupdate', handleTimeUpdate);
+      audioElement.removeEventListener('ended', handleAudioEnd);
+      window.removeEventListener('beforeunload', savePlaybackState);
     };
-  }, []);
+  }, [audioPath, duration]);
 
-  const handleTimeUpdate = () => {
-    const current = audioRef.current.currentTime;
-    const prog = (current / duration) * 100;
-    setCurrentTime(current);
-    if (progressRef.current) {
-      progressRef.current.style.width = `${prog}%`;
+  useEffect(() => {
+    if (isPlaying && audioRef.current.paused) {
+      audioRef.current.play();
+    } else if (!isPlaying && !audioRef.current.paused) {
+      audioRef.current.pause();
     }
+  }, [isPlaying]);
+
+  const savePlaybackState = () => {
+    const playbackState = {
+      songPath: audioPath,
+      currentTime: audioRef.current.currentTime,
+      isPlaying
+    };
+    localStorage.setItem('playbackState', JSON.stringify(playbackState));
   };
 
   const togglePlay = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
     setIsPlaying(!isPlaying);
   };
 
@@ -51,18 +96,25 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath, }) => {
     audioRef.current.currentTime = newTime;
   };
 
+  const handleVolumeChange = (e) => {
+    const newVolume = parseFloat(e.target.value);
+    audioRef.current.volume = newVolume;
+    setVolume(newVolume);
+    localStorage.setItem('volume', newVolume.toString());
+  };
+
   return (
     <div className="reproductor">
       <div className='information-song'>
-        <img className="reproductor-imagen" src={songImage} alt={songName} />
+        <div className='reproductor-imagen-box'>
+          <img className="reproductor-imagen" src={songImage} alt={songName} />
+        </div>
         <div className='box-name-artist'>
           <p className="reproductor-nombre">{songName}</p>
           <p className='reproductor-cantante'>
             {Array.isArray(songArtist) ? songArtist.join(', ') : songArtist}
           </p>
         </div>
-
-
       </div>
 
       <div className='reproductor-controls'>
@@ -73,28 +125,23 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath, }) => {
         <span className="reproductor-duracion">{Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}</span>
         <button onClick={togglePlay} className="reproductor-boton">{
           isPlaying
-            ?
-            <span className="material-symbols-outlined pause-icon">
-              pause_circle
-            </span>
-            : <span className="material-symbols-outlined play-icon">
-              play_circle
-            </span>}
-        </button>
+            ? <span className="material-symbols-outlined pause-icon">pause_circle</span>
+            : <span className="material-symbols-outlined play-icon">play_circle</span>
+        }</button>
       </div>
       <div className='volume-box'>
-        <span class="material-symbols-outlined">
-          volume_up
-        </span>
-        <input type="range" min="0" max="1" step="0.01" defaultValue="1" onChange={e => audioRef.current.volume = e.target.value} className="reproductor-volumen" />
+        <span className="material-symbols-outlined">volume_up</span>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value={volume}
+          onChange={handleVolumeChange}
+          className="reproductor-volumen"
+        />
         <audio ref={audioRef} src={audioPath}></audio>
-        {
-          console.log(songArtist)
-
-
-        }
       </div>
-
     </div>
   );
 };

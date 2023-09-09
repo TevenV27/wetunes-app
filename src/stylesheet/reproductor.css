@@ -6,36 +6,46 @@
   justify-content: space-between;
   padding: 0px 20px;
 }
-.reproductor-controls{
+
+.information-song {
   display: flex;
   align-items: center;
 }
 
-.information-song{
+.reproductor-imagen-box {
   display: flex;
-  align-items: center;
-}
-.reproductor-imagen {
+  background: #282828;
   border-radius: 5px;
-  width: 50px;
-  height: 50px;
+
+  .reproductor-imagen {
+      border-radius: 5px;
+      border: none;
+      width: 50px;
+      height: 50px;
+  }
 }
-.box-name-artist{
+
+.box-name-artist {
   padding: 0px 10px;
   width: 200px;
 
   .reproductor-nombre {
-    font-size: 16px;
-    width: 100%;
-    font-weight: 700;
+      font-size: 16px;
+      width: 100%;
+      font-weight: 700;
   }
-  .reproductor-cantante{
-    font-size: 12px;
-    width: 100%;
-    color: #8A8A8A;
+
+  .reproductor-cantante {
+      font-size: 12px;
+      width: 100%;
+      color: #8A8A8A;
   }
 }
 
+.reproductor-controls {
+  display: flex;
+  align-items: center;
+}
 
 .reproductor-tiempo {
   margin-left: 10px;
@@ -51,6 +61,7 @@
 }
 
 .reproductor-progreso {
+  width: 0%;
   height: 100%;
   background: #00C2FF;
 }
@@ -67,20 +78,97 @@
   background: none;
   border: none;
   cursor: pointer;
-  .pause-icon{
-    font-size: 35px;
+
+  .pause-icon, .play-icon {
+      font-size: 35px;
   }
-  .play-icon{
-    font-size: 35px;
-  }
+}
+
+.volume-box {
+  display: flex;
+  align-items: center;
 }
 
 .reproductor-volumen {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  height: 5px;
+  width: 100px;
   margin-left: 10px;
-  
+  background: transparent;
 }
 
-.volume-box{
-  display: flex;
-  align-items: center;
+.reproductor-volumen::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #8A8A8A;
+}
+
+.reproductor-volumen::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #00C2FF;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  transition: background .3s;
+  margin-top: -5px;
+}
+
+.reproductor-volumen::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #8A8A8A;
+}
+
+.reproductor-volumen::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background: #00C2FF;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  transition: background .3s;
+}
+
+.reproductor-volumen::-moz-range-progress {
+  background-color: #00C2FF;
+  height: 5px;
+}
+
+.reproductor-volumen::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent; 
+  color: transparent;
+}
+
+.reproductor-volumen::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  background: #00C2FF;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  transition: background .3s;
+}
+
+.reproductor-volumen::-ms-fill-lower {
+  background-color: #00C2FF;
+}
+
+.reproductor-volumen::-ms-fill-upper {
+  background-color: #8A8A8A;
+}
+
+.reproductor-volumen:focus::-webkit-slider-runnable-track {
+  background-color: #8A8A8A;
 }

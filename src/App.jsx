@@ -27,7 +27,7 @@ function App() {
                             songName: song.nombre,
                             songArtist: song.cantante,
                             songImage: song.imagen,
-                            audioPath: song.cancion,// Asumiendo que hay un campo audio en el objeto de la canción. Ajusta si es diferente.
+                            audioPath: song.cancion,
                         })} />
                     </div>
 
@@ -52,6 +52,7 @@ function App() {
                             songArtist={selectedSong.songArtist}
                             songImage={selectedSong.songImage}
                             audioPath={selectedSong.audioPath}
+                
                         />
         
                     )}
