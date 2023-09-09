@@ -118,9 +118,13 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
 
       <div className='reproductor-controls'>
         <span className="reproductor-tiempo">{Math.floor(currentTime / 60)}:{('0' + Math.floor(currentTime % 60)).slice(-2)}</span>
-        <div className="reproductor-barra" onClick={handleProgressBarClick}>
-          <div ref={progressRef} className="reproductor-progreso"></div>
+        <div className='reproductor-barra-box'>
+          <div className="reproductor-barra" onClick={handleProgressBarClick}>
+
+            <div ref={progressRef} className="reproductor-progreso"></div>
+          </div>
         </div>
+
         <span className="reproductor-duracion">{Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}</span>
         <button onClick={togglePlay} className="reproductor-boton">{
           isPlaying
@@ -131,13 +135,13 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
       <div className='volume-box'>
         <span className="material-symbols-outlined">volume_up</span>
         <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.01"
-            value={volume}
-            onChange={handleVolumeChange}
-            className="reproductor-volumen"
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value={volume}
+          onChange={handleVolumeChange}
+          className="reproductor-volumen"
         />
         <audio ref={audioRef} src={audioPath}></audio>
       </div>

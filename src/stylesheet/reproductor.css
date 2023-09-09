@@ -19,10 +19,10 @@
   border-radius: 5px;
 
   .reproductor-imagen {
-      border-radius: 5px;
-      border: none;
-      width: 50px;
-      height: 50px;
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -31,15 +31,15 @@
   width: 150px;
 
   .reproductor-nombre {
-      font-size: 16px;
-      width: 100%;
-      font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 700;
   }
 
   .reproductor-cantante {
-      font-size: 12px;
-      width: 100%;
-      color: #8A8A8A;
+    font-size: 12px;
+    width: 100%;
+    color: #8A8A8A;
   }
 }
 
@@ -80,8 +80,9 @@
   border: none;
   cursor: pointer;
 
-  .pause-icon, .play-icon {
-      font-size: 35px;
+  .pause-icon,
+  .play-icon {
+    font-size: 35px;
   }
 }
 
@@ -147,8 +148,8 @@
   width: 100%;
   height: 5px;
   cursor: pointer;
-  background: transparent; 
-  border-color: transparent; 
+  background: transparent;
+  border-color: transparent;
   color: transparent;
 }
 
@@ -174,8 +175,77 @@
   background-color: #8A8A8A;
 }
 
-@media (max-width: 1400px){
-  .reproductor-barra{
-      width: 350px;
+@media (max-width: 1400px) {
+  .reproductor-barra {
+    width: 350px;
+  }
+}
+
+@media (max-width: 769px) {
+  .reproductor {
+    position: relative;
+    padding: 0px 5px;
+  }
+
+  .reproductor-barra-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    .reproductor-barra {
+      width: 100%;
+      height: 3px;
+    }
+  }
+
+  .reproductor-imagen-box {
+
+    .reproductor-imagen {
+      border-radius: 5px;
+      border: none;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .box-name-artist {
+    padding: 0px 10px;
+    width: 100px;
+    overflow: hidden;
+    z-index: 1;
+
+    .reproductor-nombre {
+      font-size: 11px;
+      width: 100%;
+      font-weight: 700;
+    }
+
+    .reproductor-cantante {
+      font-size: 9px;
+      width: 100%;
+      color: #8A8A8A;
+    }
+
+  }
+
+  .reproductor-boton {
+    z-index: 1;
+  }
+
+  .reproductor-tiempo {
+    display: none;
+  }
+
+  .reproductor-duracion {
+    display: none;
+  }
+
+  .volume-box {
+    display: none;
   }
 }
