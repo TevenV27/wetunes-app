@@ -23,6 +23,16 @@
         "imagen" : "https://es.rollingstone.com/wp-content/uploads/2023/08/Karol-G-aposto-por-ella-misma-y-gano.jpg"
     },
     {
+        "nombre":"Manuel Turizo",
+        "genero":"Bachata",
+        "imagen":"https://www.billboard.com/wp-content/uploads/2022/10/manuel-turizo-press-photo-La-Industria-INC-billboard-1-1548.jpg?w=942&h=623&crop=1"
+    },
+    {
+        "nombre":"Aventura",
+        "genero":"Bachata",
+        "imagen":"https://akamai.sscdn.co/uploadfile/letras/fotos/b/b/d/3/bbd3c23f243daa4fdec5378e58fb4855.jpg"
+    },
+    {
         "nombre":"Romeo Santos",
         "genero":"Bachata",
         "imagen":"https://imgmedia.larepublica.pe/640x371/larepublica/migration/images/AYRDKVL2PRAJRHBE5R2ST5UIBY.webp"
@@ -31,6 +41,16 @@
         "nombre":"Prince Royce",
         "genero":"Bachata",
         "imagen":"https://upload.wikimedia.org/wikipedia/commons/f/f7/Prince_Royce_on_Acceso_Total.jpg"
+    },
+    {
+        "nombre":"The Weekend",
+        "genero":"Rock",
+        "imagen":"https://www.eluniverso.com/resizer/0wWe97oxI6FdrIVEQsjb_uq3iMk=/800x450/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/37MSQLA4X5GTJC4ZL7XKSN6CLE.jpeg"
+    },
+    {
+        "nombre":"Artic Monkeys",
+        "genero":"Rock",
+        "imagen":"https://kubomusical.com/wp-content/uploads/2020/03/arctic-monkeys.jpg"
     },
     {
         "nombre":"Queen",
@@ -46,6 +66,21 @@
         "nombre":"Cold Play",
         "genero":"Rock",
         "imagen":"https://lumiere-a.akamaihd.net/v1/images/coldplay_en_chile_2022_45e7eeb2.jpeg?region=0,0,1280,722&width=960"
+    },
+    {
+        "nombre":"Avicci",
+        "genero":"Electronica",
+        "imagen":"https://www.latercera.com/resizer/TTvTc5CAmq9BiMzjqUk5sY89Sxk=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/KOAYEACGZJDATCQ4Z2CZRNJZW4.jpg"
+    },
+    {
+        "nombre":"The Chainsmokers",
+        "genero":"Electronica",
+        "imagen":"https://i.scdn.co/image/ab6761610000e5ebdb68d678df6d89bf8a55d052"
+    },
+    {
+        "nombre":"Tom Odell",
+        "genero":"Rock",
+        "imagen":"https://akamai.sscdn.co/uploadfile/letras/albuns/4/b/9/f/319741386265101.jpg"
     },
     {
         "nombre":"Adolescentes Orquesta",

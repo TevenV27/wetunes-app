@@ -177,7 +177,7 @@
         "cantante": "Mike Towers",
         "genero": "reggaeton",
         "duracion": "3:19",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/LALA.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/lala.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-Sfjvzl1wagqx-0-t500x500.jpg"
     },
     {
@@ -185,7 +185,7 @@
         "cantante": "Quevedo",
         "genero": "reggaeton",
         "duracion": "3:07",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Columbia.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/columbia.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000169745398-hhvop9-t500x500.jpg"
     },
     {
@@ -193,7 +193,7 @@
         "cantante": "Don Omar",
         "genero": "reggaeton",
         "duracion": "3:18",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Danza Kuduro-Don Omar - ft. Lucenzo.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/danza-kuduro.mp3",
         "imagen": "https://i.scdn.co/image/ab67616d0000b27352e8072be373bae435b7a7b2"
     },
     {
@@ -201,7 +201,7 @@
         "cantante": "Luis Fonsi",
         "genero": "reggaeton",
         "duracion": "4:50",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Despacito - Luis Fonsi - ft.Daddy Yankee.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/despacito.mp3",
         "imagen": "https://i.scdn.co/image/ab67616d0000b273a5971936e3b8d91f8b616b17"
     },
     {
@@ -209,7 +209,7 @@
         "cantante": "Daddy Yankee",
         "genero": "reggaeton",
         "duracion": "3:14",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Gasolina-Daddy Yankee.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gasolina.mp3",
         "imagen": "https://i.scdn.co/image/ab67616d0000b2737f68406bafad6162f6acdf8a"
     },
     {
@@ -217,7 +217,7 @@
         "cantante": "Avicii",
         "genero": "electronica",
         "duracion": "2:54",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/The nights-Avicii.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/the-nights.mp3",
         "imagen": "https://i.pinimg.com/originals/ee/2c/3c/ee2c3c07ae423953fec4419232754f5d.png"
     },
     {
@@ -225,7 +225,7 @@
         "cantante": "The Chainsmokers",
         "genero": "electronica",
         "duracion": "3:28",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/The nights-Avicii.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/don't-let-me-down.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000169745398-hhvop9-t500x500.jpg"
     },
     {
@@ -233,7 +233,7 @@
         "cantante": "Tom Odell",
         "genero": "rock",
         "duracion": "4:04",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Another Love-Tom Odell.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/another-love.mp3",
         "imagen" : "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f"
     },
     {
@@ -241,7 +241,7 @@
         "cantante": "Artic Monkeys",
         "genero": "rock",
         "duracion": "3:04",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/I Wanna Be Yours-Arctic Monkeys.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/i-wanna-be-yours.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-hAiTfsOSiHL4nIM1-LHNs3Q-t500x500.jpg"
     },
     {
@@ -249,7 +249,7 @@
         "cantante": "The Weekend",
         "genero": "rock",
         "duracion": "3:45",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Starboy  ft. Daft Punk-The Weeknd.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/starboy.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-3TeyJFS7lzKn9r5B-PpqXwg-t500x500.jpg"
     },
     {
@@ -257,7 +257,7 @@
         "cantante": "Manuel Turizo",
         "genero": "bachata",
         "duracion": "2:42",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/La Bachata - Manuel Turizo.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-bachata.mp3",
         "imagen" : "https://i.scdn.co/image/ab67616d0000b27316113fd9f4450cd2167bc493"
     },
     {
@@ -265,7 +265,7 @@
         "cantante": "Romeo Santos",
         "genero": "bachata",
         "duracion": "4:11",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Eres Mía - Romeo Santos.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/eres-mia.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000093528394-vggdro-t500x500.jpg"
     },
     {
@@ -273,7 +273,7 @@
         "cantante": "Prince Royce",
         "genero": "bachata",
         "duracion": "3:45",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Rechazame - Prince Royce.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/rechazame.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-Ni2Hd3BzO9i3g5eE-AJ3uGA-t500x500.jpg"
     },
     {
@@ -281,7 +281,7 @@
         "cantante": "Aventura",
         "genero": "bachata",
         "duracion": "4:13",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Obsesión - Aventura.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/obsesion.mp3",
         "imagen": "https://i.scdn.co/image/ab67616d0000b273e1afa83bd73aa80c0ff0ee34"
     },
     {
@@ -289,7 +289,7 @@
         "cantante": "Romeo Santos",
         "genero": "bachata",
         "duracion": "3:53",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/Propuesta Indecente - Romeo Santos.mp3",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/propuesta-indecente.mp3",
         "imagen": "https://i1.sndcdn.com/artworks-000054092787-nba7jf-t500x500.jpg"
     }
 ]
