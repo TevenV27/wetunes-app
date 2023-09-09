@@ -2,29 +2,34 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../stylesheet/reproductor.css';
 
 const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
-  const audioRef = useRef(null);
-  const progressRef = useRef(null);
-
-  const savedPlaybackState = localStorage.getItem('playbackState');
-  let initialIsPlaying = false;
-  let initialCurrentTime = 0;
-  if (savedPlaybackState && JSON.parse(savedPlaybackState).songPath === audioPath) {
-    initialIsPlaying = JSON.parse(savedPlaybackState).isPlaying;
-    initialCurrentTime = JSON.parse(savedPlaybackState).currentTime;
-  }
+  const lastPlayedSong = localStorage.getItem('lastPlayedSong');
+  const initialIsPlaying = lastPlayedSong === audioPath ? (localStorage.getItem('isPlaying') === 'true' || false) : false;
+  const initialCurrentTime = lastPlayedSong === audioPath ? parseFloat(localStorage.getItem('currentTime')) || 0 : 0;
 
   const [isPlaying, setIsPlaying] = useState(initialIsPlaying);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(initialCurrentTime);
   const [volume, setVolume] = useState(1.0);
 
+  const audioRef = useRef(null);
+  const progressRef = useRef(null);
+
   useEffect(() => {
     const audioElement = audioRef.current;
+
+    if (isPlaying && audioElement.paused) {
+      audioElement.play();
+    }
+
+    if (initialCurrentTime) {
+      audioElement.currentTime = initialCurrentTime;
+    }
 
     const handleTimeUpdate = () => {
       if (audioElement.paused || audioElement.ended) {
         return;
       }
+
       const current = audioElement.currentTime;
       const prog = (current / duration) * 100;
       setCurrentTime(current);
@@ -58,12 +63,9 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
     });
     audioElement.addEventListener('ended', handleAudioEnd);
 
-    window.addEventListener('beforeunload', savePlaybackState);
-
     return () => {
       audioElement.removeEventListener('timeupdate', handleTimeUpdate);
       audioElement.removeEventListener('ended', handleAudioEnd);
-      window.removeEventListener('beforeunload', savePlaybackState);
     };
   }, [audioPath, duration]);
 
@@ -75,14 +77,11 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
     }
   }, [isPlaying]);
 
-  const savePlaybackState = () => {
-    const playbackState = {
-      songPath: audioPath,
-      currentTime: audioRef.current.currentTime,
-      isPlaying
-    };
-    localStorage.setItem('playbackState', JSON.stringify(playbackState));
-  };
+  useEffect(() => {
+    localStorage.setItem('isPlaying', isPlaying);
+    localStorage.setItem('currentTime', currentTime);
+    localStorage.setItem('lastPlayedSong', audioPath);
+  }, [isPlaying, currentTime, audioPath]);
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
@@ -132,13 +131,13 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
       <div className='volume-box'>
         <span className="material-symbols-outlined">volume_up</span>
         <input
-          type="range"
-          min="0"
-          max="1"
-          step="0.01"
-          value={volume}
-          onChange={handleVolumeChange}
-          className="reproductor-volumen"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value={volume}
+            onChange={handleVolumeChange}
+            className="reproductor-volumen"
         />
         <audio ref={audioRef} src={audioPath}></audio>
       </div>
