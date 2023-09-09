@@ -1,175 +1,295 @@
 [
     {
-        "nombre": "Deseandote",
-        "cantante": "Frankie Ruiz",
-        "genero": "salsa",
-        "duracion": "4:45",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/deseandote.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-000579930905-ytj92d-t500x500.jpg"
+    "nombre": "Deseandote",
+    "cantante": "Frankie Ruiz",
+    "genero": "salsa",
+    "duracion": "4:45",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/deseandote.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000579930905-ytj92d-t500x500.jpg"
     },
     {
-        "nombre": "La noche mas linda",
-        "cantante": "Adalberto Santiago",
-        "genero": "salsa",
-        "duracion": "5:40",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-noche-mas-linda.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-000215594085-b3xu7b-t500x500.jpg"
+    "nombre": "La noche mas linda",
+    "cantante": "Adalberto Santiago",
+    "genero": "salsa",
+    "duracion": "5:40",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-noche-mas-linda.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000215594085-b3xu7b-t500x500.jpg"
     },
     {
-        "nombre": "Procura",
-        "cantante": "Chichi Peralta",
-        "genero": "salsa",
-        "duracion": "4:32",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/procura.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-D4sGGFRT6MYK-0-t500x500.png"
+    "nombre": "Procura",
+    "cantante": "Chichi Peralta",
+    "genero": "salsa",
+    "duracion": "4:32",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/procura.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-D4sGGFRT6MYK-0-t500x500.png"
     },
     {
-        "nombre": "Virgen",
-        "cantante": "Adolescentes Orquesta",
-        "genero": "salsa",
-        "duracion": "4:31",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/virgen.mp3",
-        "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ac/f9/f2/acf9f236-eae7-023a-120d-6c071797512d/cover.jpg/486x486bb.png"
+    "nombre": "Virgen",
+    "cantante": "Adolescentes Orquesta",
+    "genero": "salsa",
+    "duracion": "4:31",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/virgen.mp3",
+    "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ac/f9/f2/acf9f236-eae7-023a-120d-6c071797512d/cover.jpg/486x486bb.png"
     },
     {
-        "nombre": "Hymn for the weekend",
-        "cantante": "Cold Play",
-        "genero": "rock",
-        "duracion": "4:18",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/hymn-for-the weekend.mp3",
-        "imagen": "https://img.wattpad.com/35e66cdc3f77e869eaf3735159cb049cbb9662d6/68747470733a2f2f692e6779617a6f2e636f6d2f35373364653664386531303039303064306234626432343363343030346538622e706e67?s=fit&h=360&w=360&q=80"
+    "nombre": "Hymn for the weekend",
+    "cantante": "Cold Play",
+    "genero": "rock",
+    "duracion": "4:18",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/hymn-for-the weekend.mp3",
+    "imagen": "https://img.wattpad.com/35e66cdc3f77e869eaf3735159cb049cbb9662d6/68747470733a2f2f692e6779617a6f2e636f6d2f35373364653664386531303039303064306234626432343363343030346538622e706e67?s=fit&h=360&w=360&q=80"
     },
     {
-        "nombre": "Demons",
-        "cantante": "Imagine Dragons",
-        "genero": "rock",
-        "duracion": "3:02",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/demons.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-000241938427-nscbv9-t500x500.jpg"
+    "nombre": "Demons",
+    "cantante": "Imagine Dragons",
+    "genero": "rock",
+    "duracion": "3:02",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/demons.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000241938427-nscbv9-t500x500.jpg"
     },
     {
-        "nombre": "Believer",
-        "cantante": "Imagine Dragons",
-        "genero": "rock",
-        "duracion": "3:02",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/believer.mp3",
-        "imagen": "https://paraisodeloslibrosperdidos.files.wordpress.com/2017/10/c-wprtuxyaah9gj.jpg"
+    "nombre": "Believer",
+    "cantante": "Imagine Dragons",
+    "genero": "rock",
+    "duracion": "3:02",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/believer.mp3",
+    "imagen": "https://paraisodeloslibrosperdidos.files.wordpress.com/2017/10/c-wprtuxyaah9gj.jpg"
     },
     {
-        "nombre": "We Will Rock You",
-        "cantante": "Queen",
-        "genero": "rock",
-        "duracion": "2:05",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/we-will-rock-you.mp3",
-        "imagen": "https://cdn.freebiesupply.com/logos/large/2x/we-will-rock-you-logo-black-and-white.png"
+    "nombre": "We Will Rock You",
+    "cantante": "Queen",
+    "genero": "rock",
+    "duracion": "2:05",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/we-will-rock-you.mp3",
+    "imagen": "https://cdn.freebiesupply.com/logos/large/2x/we-will-rock-you-logo-black-and-white.png"
     },
     {
-        "nombre": "Necio",
-        "cantante": "Romeo Santos",
-        "genero": "bachata",
-        "duracion": "4:39",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/necio.mp3",
-        "imagen": "https://i.scdn.co/image/ab67616d0000b273e9da42890bbd629df1e8f640"
+    "nombre": "Necio",
+    "cantante": "Romeo Santos",
+    "genero": "bachata",
+    "duracion": "4:39",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/necio.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b273e9da42890bbd629df1e8f640"
     },
     {
-        "nombre": "Imitadora",
-        "cantante": "Romeo Santos",
-        "genero": "bachata",
-        "duracion": "3:56",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/imitadora.mp3",
-        "imagen": "https://m.media-amazon.com/images/M/MV5BZmM0OTZkOWItYzY2OC00MzcxLThiNTktM2IxNjY3MTA3ZTVmXkEyXkFqcGdeQXVyMzM0NTc2MTE@._V1_.jpg"
+    "nombre": "Imitadora",
+    "cantante": "Romeo Santos",
+    "genero": "bachata",
+    "duracion": "3:56",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/imitadora.mp3",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BZmM0OTZkOWItYzY2OC00MzcxLThiNTktM2IxNjY3MTA3ZTVmXkEyXkFqcGdeQXVyMzM0NTc2MTE@._V1_.jpg"
     },
     {
-        "nombre": "La Carretera",
-        "cantante": "Prince Royce",
-        "genero": "bachata",
-        "duracion": "3:56",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-carretera.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-000196682781-76gjbq-t500x500.jpg"
+    "nombre": "La Carretera",
+    "cantante": "Prince Royce",
+    "genero": "bachata",
+    "duracion": "3:56",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-carretera.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000196682781-76gjbq-t500x500.jpg"
     },
     {
-        "nombre": "El Amor Que Perdimos",
-        "cantante": "Prince Royce",
-        "genero": "bachata",
-        "duracion": "4:07",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/el-amor-que-perdimos.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-000134076854-ha0zhp-t500x500.jpg"
+    "nombre": "El Amor Que Perdimos",
+    "cantante": "Prince Royce",
+    "genero": "bachata",
+    "duracion": "4:07",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/el-amor-que-perdimos.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000134076854-ha0zhp-t500x500.jpg"
     },
     {
-        "nombre": "Una Vez",
-        "cantante": [
-            "Bad Bunny",
-            "Mora"
-        ],
-        "genero": "reggaeton",
-        "duracion": "3:52",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/una-vez.mp3",
-        "imagen": "https://f4.bcbits.com/img/a0809846453_10.jpg"
+    "nombre": "Una Vez",
+    "cantante": [
+    "Bad Bunny",
+    "Mora"
+    ],
+    "genero": "reggaeton",
+    "duracion": "3:52",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/una-vez.mp3",
+    "imagen": "https://f4.bcbits.com/img/a0809846453_10.jpg"
     },
     {
-        "nombre": "Diva Virtual",
-        "cantante": "Don Omar",
-        "genero": "reggaeton",
-        "duracion": "4:01",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/diva-virtual.mp3",
-        "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/VirtualDiva2009.png/220px-VirtualDiva2009.png"
+    "nombre": "Diva Virtual",
+    "cantante": "Don Omar",
+    "genero": "reggaeton",
+    "duracion": "4:01",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/diva-virtual.mp3",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/VirtualDiva2009.png/220px-VirtualDiva2009.png"
     },
     {
-        "nombre": "Gato de Noche",
-        "cantante": "Bad Bunny",
-        "genero": "reggaeton",
-        "duracion": "3:48",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gato-de-noche.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-twgMyBVp9zz7UCRI-b40k2A-t500x500.jpg"
+    "nombre": "Gato de Noche",
+    "cantante": "Bad Bunny",
+    "genero": "reggaeton",
+    "duracion": "3:48",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gato-de-noche.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-twgMyBVp9zz7UCRI-b40k2A-t500x500.jpg"
     },
     {
-        "nombre": "Tusa",
-        "cantante": [
-            "Karol G",
-            "Nicky Minaj"
-        ],
-        "genero": "reggaeton",
-        "duracion": "3:22",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tusa.mp3",
-        "imagen": "https://www.elsoldepuebla.com.mx/incoming/h8e2tr-tusa-.png/ALTERNATES/LANDSCAPE_1140/tusa%20.png"
+    "nombre": "Tusa",
+    "cantante": [
+    "Karol G",
+    "Nicky Minaj"
+    ],
+    "genero": "reggaeton",
+    "duracion": "3:22",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tusa.mp3",
+    "imagen": "https://www.elsoldepuebla.com.mx/incoming/h8e2tr-tusa-.png/ALTERNATES/LANDSCAPE_1140/tusa%20.png"
     },
     {
-        "nombre": "Caramelo",
-        "cantante": [
-            "Ozuna",
-            "Karol G",
-            "Mike Towers"
-        ],
-        "genero": "reggaeton",
-        "duracion": "3:22",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/caramelo.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-2UdM89ad9xmz-0-t500x500.jpg"
+    "nombre": "Caramelo",
+    "cantante": [
+    "Ozuna",
+    "Karol G",
+    "Mike Towers"
+    ],
+    "genero": "reggaeton",
+    "duracion": "3:22",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/caramelo.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-2UdM89ad9xmz-0-t500x500.jpg"
     },
     {
-        "nombre": "Animals",
-        "cantante": "Martin Garrix",
-        "genero": "electronica",
-        "duracion": "5:04",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/animals.mp3",
-        "imagen": "https://cdns-images.dzcdn.net/images/cover/e1573b46aa6255afcf65f63b63aa82da/500x500.jpg"
+    "nombre": "Animals",
+    "cantante": "Martin Garrix",
+    "genero": "electronica",
+    "duracion": "5:04",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/animals.mp3",
+    "imagen": "https://cdns-images.dzcdn.net/images/cover/e1573b46aa6255afcf65f63b63aa82da/500x500.jpg"
     },
     {
-        "nombre": "Tsunami",
-        "cantante": [
-            "DVBBS",
-            "Borgeous"
-        ],
-        "genero": "electronica",
-        "duracion": "3:58",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tsunami.mp3",
-        "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f2/3f/73/f23f73c7-82e6-a258-278a-900d06da4bb4/8712944442830.jpg/486x486bb.png"
+    "nombre": "Tsunami",
+    "cantante": [
+    "DVBBS",
+    "Borgeous"
+    ],
+    "genero": "electronica",
+    "duracion": "3:58",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tsunami.mp3",
+    "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f2/3f/73/f23f73c7-82e6-a258-278a-900d06da4bb4/8712944442830.jpg/486x486bb.png"
     },
     {
-        "nombre": "Ascend",
-        "cantante": "Dezko",
-        "genero": "electronica",
-        "duracion": "3:20",
-        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/ascend-dezko.mp3",
-        "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/44/64/634464b6-89d3-9763-8487-e9d4031e2c91/197189222627.jpg/1200x1200bf-60.jpg"
+    "nombre": "Ascend",
+    "cantante": "Dezko",
+    "genero": "electronica",
+    "duracion": "3:20",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/ascend-dezko.mp3",
+    "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/44/64/634464b6-89d3-9763-8487-e9d4031e2c91/197189222627.jpg/1200x1200bf-60.jpg"
+    },
+    {
+    "nombre": "Lala",
+    "cantante": "Mike Towers",
+    "genero": "reggaeton",
+    "duracion": "3:19",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/lala.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-Sfjvzl1wagqx-0-t500x500.jpg"
+    },
+    {
+    "nombre": "Columbia",
+    "cantante": "Quevedo",
+    "genero": "reggaeton",
+    "duracion": "3:07",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/columbia.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000169745398-hhvop9-t500x500.jpg"
+    },
+    {
+    "nombre": "Danza Kuduro",
+    "cantante": "Don Omar",
+    "genero": "reggaeton",
+    "duracion": "3:18",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/danza-kuduro.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b27352e8072be373bae435b7a7b2"
+    },
+    {
+    "nombre": "Despacito",
+    "cantante": "Luis Fonsi",
+    "genero": "reggaeton",
+    "duracion": "4:50",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/despacito.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b273a5971936e3b8d91f8b616b17"
+    },
+    {
+    "nombre": "Gasolina",
+    "cantante": "Daddy Yankee",
+    "genero": "reggaeton",
+    "duracion": "3:14",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gasolina.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b2737f68406bafad6162f6acdf8a"
+    },
+    {
+    "nombre": "The Nights",
+    "cantante": "Avicii",
+    "genero": "electronica",
+    "duracion": "2:54",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/the-nights.mp3",
+    "imagen": "https://i.pinimg.com/originals/ee/2c/3c/ee2c3c07ae423953fec4419232754f5d.png"
+    },
+    {
+    "nombre": "Don't let me down",
+    "cantante": "The Chainsmokers",
+    "genero": "electronica",
+    "duracion": "3:28",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/don't-let-me-down.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000169745398-hhvop9-t500x500.jpg"
+    },
+    {
+    "nombre": "Another Love",
+    "cantante": "Tom Odell",
+    "genero": "rock",
+    "duracion": "4:04",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/another-love.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f"
+    },
+    {
+    "nombre": "I Wanna Be Yours",
+    "cantante": "Artic Monkeys",
+    "genero": "rock",
+    "duracion": "3:04",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/i-wanna-be-yours.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-hAiTfsOSiHL4nIM1-LHNs3Q-t500x500.jpg"
+    },
+    {
+    "nombre": "Starboy",
+    "cantante": "The Weekend",
+    "genero": "rock",
+    "duracion": "3:45",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/starboy.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-3TeyJFS7lzKn9r5B-PpqXwg-t500x500.jpg"
+    },
+    {
+    "nombre": "La Bachata",
+    "cantante": "Manuel Turizo",
+    "genero": "bachata",
+    "duracion": "2:42",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-bachata.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b27316113fd9f4450cd2167bc493"
+    },
+    {
+    "nombre": "Eres Mia",
+    "cantante": "Romeo Santos",
+    "genero": "bachata",
+    "duracion": "4:11",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/eres-mia.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000093528394-vggdro-t500x500.jpg"
+    },
+    {
+    "nombre": "Rechazame",
+    "cantante": "Prince Royce",
+    "genero": "bachata",
+    "duracion": "3:45",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/rechazame.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-Ni2Hd3BzO9i3g5eE-AJ3uGA-t500x500.jpg"
+    },
+    {
+    "nombre": "Obsesion",
+    "cantante": "Aventura",
+    "genero": "bachata",
+    "duracion": "4:13",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/obsesion.mp3",
+    "imagen": "https://i.scdn.co/image/ab67616d0000b273e1afa83bd73aa80c0ff0ee34"
+    },
+    {
+    "nombre": "Propuesta Indecente",
+    "cantante": "Romeo Santos",
+    "genero": "bachata",
+    "duracion": "3:53",
+    "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/propuesta-indecente.mp3",
+    "imagen": "https://i1.sndcdn.com/artworks-000054092787-nba7jf-t500x500.jpg"
     }
-]
+    ]

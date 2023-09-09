@@ -9,7 +9,6 @@ p{
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
-    overflow-x: hidden;
 
 }
 .songs-container::-webkit-scrollbar {
@@ -28,7 +27,6 @@ p{
 
 .song-box{
     margin-bottom: 40px;
-    
 }
 
 .genre-name{
@@ -43,7 +41,7 @@ p{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 .img-box{
@@ -72,37 +70,47 @@ p{
             font-weight: 400;
             color: #8A8A8A;
         }
-    
+
     }
 }
 
 
 
-.section-song{
+.section-song {
     width: 100%;
     display: flex;
-    gap: 37px;
+    gap: 20px;
     overflow-x: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    
+    scrollbar-width: thin; 
+    scrollbar-color: #1b1b1b transparent; 
+    overflow-y: hidden;
+   
 }
+
 .section-song::-webkit-scrollbar {
-    width: 0px;
+    height: 10px;  /* Altura del scrollbar */
+    width: 10px;   /* Ancho del scrollbar (es importante establecer un valor para asegurarse de que el scrollbar es visible) */
+    
 }
 
 .section-song::-webkit-scrollbar-track {
-    width: 0px;
+    background-color: transparent; 
 }
 
 .section-song::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    border-radius: 3px;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
 
 .card-song{
 
-    
+    background: #1b1b1b;
+    padding: 10px 10px 15px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
     .img-song-box{
         position: relative;
         width: 200px;
@@ -114,26 +122,39 @@ p{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 90px;
+        font-size: 80px;
     }
 
-    .img-song-box:hover{
 
-        .img-song{
-            filter: blur(2px) brightness(40%);
-            
+}
+.card-song:hover {
+    background-color: #2e2e2e;
+
+    .img-song-box {
+        .img-song {
+            filter: blur(0.9px) brightness(40%);
         }
-        .play-song-icon{
-            display: block;
-            cursor: pointer;
-        }
-        .play-song-icon:hover{
-            color: #00C2FF;
-        }
+    }
+
+    .play-song-icon {
+        display: block;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease;
+        transform-origin: center;  /* Establece el punto de origen al centro */
+    }
+
+    .play-song-icon:hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        color: #00C2FF;
+        transform: translate(-50%, -50%) scale(1.1) ;
     }
 }
 
+
 @media (max-width: 1400px){
- 
-    
+
+
 }

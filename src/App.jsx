@@ -41,22 +41,24 @@ function App() {
                             <Artist />
                         </div>
                     </div>
-                </div>
 
+                </div>
                 <div className='song-control'>
                     {/* Renderizamos Reproductor solo si hay una canción seleccionada */}
                     {selectedSong && (
                         <Reproductor
                             songName={selectedSong.songName}
-                            
+
                             songArtist={selectedSong.songArtist}
                             songImage={selectedSong.songImage}
                             audioPath={selectedSong.audioPath}
-                
+
                         />
-        
+
                     )}
                 </div>
+
+
             </section>
         </main>
     )

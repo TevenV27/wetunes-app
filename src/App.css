@@ -119,7 +119,17 @@
 .song-control {
   width: 100%;
   height: 70px;
-  background: #101010;
+}
+.song-control::before {
+  content: "";
+  position: absolute;  /* Posicionar absolutamente respecto al elemento padre */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;           /* Estas propiedades hacen que el pseudo-elemento ocupe todo el espacio del contenedor padre */
+  background: #101010c7;
+  filter: blur(0.9px) brightness(40%);
+  z-index: -1;         /* Para asegurar que el pseudo-elemento quede detrás de los hijos del contenedor */
 }
 
 @media (max-width: 1400px) {

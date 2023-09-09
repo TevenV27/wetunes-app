@@ -37,7 +37,7 @@ export default function Songs(props) {
                             <div className='card-song' key={songIndex}>
                                 <div className='img-song-box'>
                                     <img className='img-song' src={song.imagen} alt="song-image" />
-                                    <span onClick={() => handleSongClick(song)} className="material-symbols-outlined play-song-icon">
+                                    <span onClick={() => handleSongClick(song)} className="material-icons play-song-icon">
                                         play_circle
                                     </span>
                                 </div>
