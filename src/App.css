@@ -200,5 +200,7 @@
   }
   .song-control{
     height: 52px;
+    position: fixed;
+    bottom: 0;
   }
 }
