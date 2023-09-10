@@ -79,6 +79,7 @@
   background: none;
   border: none;
   cursor: pointer;
+
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;  /* iOS Safari */
     -webkit-user-select: none;  /* Safari */
@@ -197,7 +198,11 @@
 @media (max-width: 769px) {
   .reproductor {
     position: relative;
-    padding: 0px 5px;
+    background: rgba(22, 22, 22, 0.849);
+    border-radius: 5px;
+    padding: 0px 0px 0px 8px;
+    backdrop-filter: blur(10px);
+
   }
 
   .reproductor-barra-box {
@@ -209,10 +214,15 @@
     display: flex;
     align-items: end;
     justify-content: center;
+    border-radius: 50%;
 
     .reproductor-barra {
       width: 100%;
       height: 3px;
+      border-radius: 10px;
+    }
+    .reproductor-progreso{
+      border-radius: 20px;
     }
   }
 
@@ -221,8 +231,8 @@
     .reproductor-imagen {
       border-radius: 5px;
       border: none;
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
     }
   }
 
@@ -248,6 +258,16 @@
 
   .reproductor-boton {
     z-index: 1;
+    margin-left: 15px;
+    padding: 0;
+    .play-icon{
+      font-size: 45px;
+    }
+    .pause-icon{
+      font-size: 45px;
+      margin-left: 0;
+      
+    }
   }
 
   .reproductor-tiempo {

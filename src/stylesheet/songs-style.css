@@ -244,6 +244,17 @@ p {
         }
     }
 
+    .card-song:active{
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+    .card-song:focus{
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+
     .description-song {
         .song-info {
             .song-name {
