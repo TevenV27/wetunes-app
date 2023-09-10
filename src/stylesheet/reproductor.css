@@ -79,11 +79,24 @@
   background: none;
   border: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;  /* iOS Safari */
+    -webkit-user-select: none;  /* Safari */
+     -khtml-user-select: none;  /* Konqueror HTML */
+       -moz-user-select: none;  /* Firefox */
+        -ms-user-select: none;  /* Internet Explorer/Edge */
+            user-select: none;
 
   .pause-icon,
   .play-icon {
     font-size: 35px;
   }
+}
+
+.reproductor-boton:active {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
 }
 
 .volume-box {
