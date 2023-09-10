@@ -199,7 +199,7 @@
   .reproductor {
     position: relative;
     background: rgba(22, 22, 22, 0.904);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0px 0px 0px 8px;
     backdrop-filter: blur(5px);
 
