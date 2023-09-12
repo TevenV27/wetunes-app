@@ -154,6 +154,30 @@
     "imagen": "https://cdns-images.dzcdn.net/images/cover/e1573b46aa6255afcf65f63b63aa82da/500x500.jpg"
     },
     {
+        "nombre": "Titanium",
+        "cantante": "David Guetta",
+        "genero": "electronica",
+        "duracion": "4:03",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/titanium.mp3",
+        "imagen": "https://cdns-images.dzcdn.net/images/cover/b1da2dd795492946f90722f6fa871adb/500x500.jpg"
+    },
+    {
+        "nombre": "In my mind",
+        "cantante": "Dynoro",
+        "genero": "electronica",
+        "duracion": "3:02",
+        "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/in-my-mind.mp3",
+        "imagen": "https://i1.sndcdn.com/artworks-PefXqLQdSaB45Bgu-KMOyZA-t500x500.jpg"
+    },
+    {
+        "nombre": "Faded",
+        "cantante": "Alan Walker",
+        "genero":"electronica",
+        "duracion":"3:33",
+        "cancion":"https://raw.githubusercontent.com/TevenV27/song-server/main/faded.mp3",
+        "imagen":"https://i1.sndcdn.com/artworks-ev0a8a8enTB0JNz4-Dlryzg-t500x500.jpg"
+    },
+    {
     "nombre": "Tsunami",
     "cantante": [
     "DVBBS",
