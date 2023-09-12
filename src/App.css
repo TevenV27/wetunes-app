@@ -2,7 +2,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(105, 105, 105);
+  background: #222222;
 }
 
 .navigation-box {
@@ -187,15 +187,11 @@
 
 
   .container-song-artist{
-    width: 100vw
-    !important; 
-    flex: 1;
+
     margin-top: 50px;
     padding-bottom: 60px;
   }
-  .songs-box{
-    flex: 1;
-  }
+
   .navigation-box{
     display: none;
   }
@@ -205,8 +201,8 @@
 
  
   .section-section-artist{
+    
     width: 100vw !important;
-
     .navigation-box-mobile{
       width: 100%;
       display: flex;
@@ -232,7 +228,7 @@
     
   }
   .song-control{
-   
+    z-index: 2;
     background: none;
     height: 52px;
     position: fixed;

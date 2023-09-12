@@ -26,7 +26,7 @@ function App() {
                         <h1 className='name-app'><span style={{ color: "#00C2FF" }}>We</span>Tunes</h1>
                     </div>
                     <button className='b-menu'>
-                        <span class="material-symbols-outlined menu-icon">
+                        <span className="material-symbols-outlined menu-icon">
                             menu
                         </span>
                     </button>

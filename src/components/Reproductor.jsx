@@ -126,7 +126,7 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
         </div>
 
         <span className="reproductor-duracion">{Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}</span>
-        <button onClick={togglePlay} className="reproductor-boton" tabindex="-1">{
+        <button onClick={togglePlay} className="reproductor-boton">{
           isPlaying
             ? <span className="material-icons pause-icon">pause</span>
             : <span className="material-icons play-icon">play_arrow</span>
