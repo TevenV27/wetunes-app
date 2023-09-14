@@ -188,8 +188,8 @@
 
   .container-song-artist{
 
-    margin-top: 50px;
-    padding-bottom: 60px;
+    padding: 50px 0px;
+    padding-bottom: 80px;
   }
 
   .navigation-box{
@@ -202,7 +202,7 @@
  
   .section-section-artist{
     
-    width: 100vw !important;
+    width: 100vw;
     .navigation-box-mobile{
       width: 100%;
       display: flex;
@@ -210,10 +210,11 @@
       z-index: 10;
       justify-content: space-between;
       align-items: center;
-      padding: 5px 10px;
+      padding: 5px 0px;
       background: #1b1b1b;
       .name-app{
         font-size: 27px;
+        margin-left: 10px;
       }
       .b-menu{
         border: none;

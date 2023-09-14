@@ -17,6 +17,5 @@ body{
 @media (max-width: 769px){
   * { 
     box-sizing: content-box;
-
   }
 }
