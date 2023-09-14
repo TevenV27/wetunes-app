@@ -43,6 +43,14 @@
             text-shadow: 3px 3px 3px rgb(0, 0, 0);
         }
     }
+    .input-name-artist{
+        width: 90%;
+        height: 40px;
+        padding-left: 10px;
+        background: #222222;
+        border: none;
+        border-radius: 5px;
+    }
 }
 
 @media (max-width: 1400px){

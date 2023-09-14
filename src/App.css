@@ -221,6 +221,7 @@
         background: none;
         display: flex;
         align-items: center;
+        cursor: pointer;
         .menu-icon{
           font-size: 40px;
         }
