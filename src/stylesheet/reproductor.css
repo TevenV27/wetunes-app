@@ -6,188 +6,216 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
-}
 
-.information-song {
-  display: flex;
-  align-items: center;
-}
+  .information-song {
+    display: flex;
+    align-items: center;
 
-.reproductor-imagen-box {
-  display: flex;
-  background: #282828;
-  border-radius: 5px;
+    .reproductor-imagen-box {
+      display: flex;
+      background: #282828;
+      border-radius: 5px;
 
-  .reproductor-imagen {
-    border-radius: 5px;
-    border: none;
-    width: 50px;
-    height: 50px;
+      .reproductor-imagen {
+        border-radius: 5px;
+        border: none;
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+
+    .box-name-artist {
+      padding: 0px 10px;
+      width: 150px;
+
+      .reproductor-nombre {
+        font-size: 16px;
+        width: 100%;
+        font-weight: 700;
+      }
+
+      .reproductor-cantante {
+        font-size: 12px;
+        width: 100%;
+        color: #8A8A8A;
+      }
+    }
+  }
+
+  .reproductor-controls {
+    display: flex;
+    align-items: center;
+
+    .reproductor-tiempo {
+      margin-left: 10px;
+    }
+
+    .reproductor-barra-box {
+      .reproductor-barra {
+        cursor: pointer;
+        width: 626px;
+        height: 5px;
+        background: #8A8A8A;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .reproductor-progreso {
+          width: 0%;
+          height: 100%;
+          background: #00C2FF;
+        }
+      }
+
+      .reproductor-duracion {
+        margin-left: 10px;
+      }
+
+    }
+
+    .reproductor-boton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+
+      .pause-icon,
+      .play-icon {
+        font-size: 35px;
+      }
+    }
+
+    .reproductor-boton:active {
+      background-color: transparent;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .volume-box {
+    display: flex;
+    align-items: center;
+    .reproductor-volumen {
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+      height: 5px;
+      width: 100px;
+      margin-left: 10px;
+      background: transparent;
+    }
+    
+    .reproductor-volumen::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      background: #8A8A8A;
+    }
+    
+    .reproductor-volumen::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 15px;
+      width: 15px;
+      background: #00C2FF;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      transition: background .3s;
+      margin-top: -5px;
+    }
+    
+    .reproductor-volumen::-moz-range-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      background: #8A8A8A;
+    }
+    
+    .reproductor-volumen::-moz-range-thumb {
+      height: 15px;
+      width: 15px;
+      background: #00C2FF;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      transition: background .3s;
+    }
+    
+    .reproductor-volumen::-moz-range-progress {
+      background-color: #00C2FF;
+      height: 5px;
+    }
+    
+    .reproductor-volumen::-ms-track {
+      width: 100%;
+      height: 5px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    
+    .reproductor-volumen::-ms-thumb {
+      height: 15px;
+      width: 15px;
+      background: #00C2FF;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      transition: background .3s;
+    }
+    
+    .reproductor-volumen::-ms-fill-lower {
+      background-color: #00C2FF;
+    }
+    
+    .reproductor-volumen::-ms-fill-upper {
+      background-color: #8A8A8A;
+    }
+    
+    .reproductor-volumen:focus::-webkit-slider-runnable-track {
+      background-color: #8A8A8A;
+    }
   }
 }
 
-.box-name-artist {
-  padding: 0px 10px;
-  width: 150px;
 
-  .reproductor-nombre {
-    font-size: 16px;
-    width: 100%;
-    font-weight: 700;
-  }
 
-  .reproductor-cantante {
-    font-size: 12px;
-    width: 100%;
-    color: #8A8A8A;
-  }
-}
 
-.reproductor-controls {
-  display: flex;
-  align-items: center;
-}
 
-.reproductor-tiempo {
-  margin-left: 10px;
-}
 
-.reproductor-barra {
-  cursor: pointer;
-  width: 626px;
-  height: 5px;
-  background: #8A8A8A;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-.reproductor-progreso {
-  width: 0%;
-  height: 100%;
-  background: #00C2FF;
-}
 
-.reproductor-duracion {
-  margin-left: 10px;
-}
 
-.reproductor-boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
 
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;  /* iOS Safari */
-    -webkit-user-select: none;  /* Safari */
-     -khtml-user-select: none;  /* Konqueror HTML */
-       -moz-user-select: none;  /* Firefox */
-        -ms-user-select: none;  /* Internet Explorer/Edge */
-            user-select: none;
 
-  .pause-icon,
-  .play-icon {
-    font-size: 35px;
-  }
-}
 
-.reproductor-boton:active {
-  background-color: transparent;
-  outline: none;
-  box-shadow: none;
-}
 
-.volume-box {
-  display: flex;
-  align-items: center;
-}
 
-.reproductor-volumen {
-  -webkit-appearance: none;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  height: 5px;
-  width: 100px;
-  margin-left: 10px;
-  background: transparent;
-}
 
-.reproductor-volumen::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  background: #8A8A8A;
-}
 
-.reproductor-volumen::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 15px;
-  width: 15px;
-  background: #00C2FF;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  transition: background .3s;
-  margin-top: -5px;
-}
 
-.reproductor-volumen::-moz-range-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  background: #8A8A8A;
-}
 
-.reproductor-volumen::-moz-range-thumb {
-  height: 15px;
-  width: 15px;
-  background: #00C2FF;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  transition: background .3s;
-}
 
-.reproductor-volumen::-moz-range-progress {
-  background-color: #00C2FF;
-  height: 5px;
-}
 
-.reproductor-volumen::-ms-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
 
-.reproductor-volumen::-ms-thumb {
-  height: 15px;
-  width: 15px;
-  background: #00C2FF;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  transition: background .3s;
-}
-
-.reproductor-volumen::-ms-fill-lower {
-  background-color: #00C2FF;
-}
-
-.reproductor-volumen::-ms-fill-upper {
-  background-color: #8A8A8A;
-}
-
-.reproductor-volumen:focus::-webkit-slider-runnable-track {
-  background-color: #8A8A8A;
-}
 
 @media (max-width: 1400px) {
   .reproductor-barra {
@@ -202,9 +230,11 @@
     padding: 0px 0px 0px 0px;
     backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    .information-song{
+
+    .information-song {
       .reproductor-imagen-box {
         margin-left: 10px;
+
         .reproductor-imagen {
           border-radius: 5px;
           border: none;
@@ -212,31 +242,34 @@
           height: 38px;
         }
       }
+
       .box-name-artist {
         padding: 0px 10px;
         width: 100px;
         overflow: hidden;
         z-index: 1;
-    
+
         .reproductor-nombre {
           font-size: 11px;
           width: 100%;
           font-weight: 700;
         }
-    
+
         .reproductor-cantante {
           font-size: 9px;
           width: 100%;
           color: #8A8A8A;
         }
-    
+
       }
-      
+
     }
-    .reproductor-controls{
+
+    .reproductor-controls {
       .reproductor-tiempo {
         display: none;
       }
+
       .reproductor-barra-box {
         position: absolute;
         top: 0;
@@ -246,45 +279,36 @@
         display: flex;
         align-items: end;
         justify-content: center;
-    
-    
+
+
         .reproductor-barra {
           width: 100%;
           height: 3px;
-     
+
         }
-    
+
       }
+
       .reproductor-duracion {
         display: none;
       }
+
       .reproductor-boton {
         z-index: 1;
         padding: 0;
-        .play-icon{
+
+        .play-icon {
           font-size: 45px;
         }
-        .pause-icon{
+
+        .pause-icon {
           font-size: 45px;
         }
       }
     }
+
     .volume-box {
       display: none;
     }
   }
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 }
