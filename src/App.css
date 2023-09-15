@@ -187,9 +187,8 @@
 
 
   .container-song-artist{
-
+    width: 100vw;
     padding: 50px 0px;
-    padding-bottom: 80px;
   }
 
   .navigation-box{

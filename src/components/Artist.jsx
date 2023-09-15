@@ -24,7 +24,7 @@ export default function Artist() {
       <input
         className='input-name-artist'
         type="text"
-        placeholder='Nombre'
+        placeholder='Nombre del Artista...'
         value={searchText}
         onChange={handleSearchInputChange}
       />
