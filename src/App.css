@@ -93,6 +93,7 @@
             width: 53px;
             height: 53px;
             border-radius: 50%;
+            cursor: pointer;
           }
         }
 
