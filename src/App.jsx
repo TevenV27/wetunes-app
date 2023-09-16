@@ -8,7 +8,9 @@ function App() {
 
     // 1. Estado inicial para la canción seleccionada será null.
     const [selectedSong, setSelectedSong] = useState(true);
-
+    const [selectedArtist, setSelectedArtist] = useState({
+        songArtist: 'default-song'
+    });
     return (
         <main className='main-container'>
             <section className='navigation-box'>
@@ -35,12 +37,15 @@ function App() {
 
                     <div className='songs-box'>
                         {/* Pasamos la función setSelectedSong como prop */}
-                        <Songs onSongClick={song => setSelectedSong({
+                        <Songs 
+                            songArtist={selectedArtist}
+                            onSongClick={song => setSelectedSong({
                             songName: song.nombre,
                             songArtist: song.cantante,
                             songImage: song.imagen,
                             audioPath: song.cancion,
-                        })} />
+                        })}
+                        />
                     </div>
 
                     <div className='rigth-panel-box'>
@@ -50,14 +55,12 @@ function App() {
                         </div>
                         <div className='artist-box'>
                             <h2 className='title-artist'>ARTISTAS</h2>
-                            <Artist />
+                            <Artist onArtistClick={artist => setSelectedArtist({
+                                artistName: artist.nombre
+                            })}
+                            />
                         </div>
                     </div>
-
-
-
-
-
                 </div>
 
                 <div className='song-control'>

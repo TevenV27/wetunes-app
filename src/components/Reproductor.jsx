@@ -6,7 +6,7 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
   const initialIsPlaying = lastPlayedSong === audioPath ? (localStorage.getItem('isPlaying') === 'true' || false) : false;
   const initialCurrentTime = lastPlayedSong === audioPath ? parseFloat(localStorage.getItem('currentTime')) || 0 : 0;
 
-  const [isPlaying, setIsPlaying] = useState(initialIsPlaying);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(initialCurrentTime);
   const [volume, setVolume] = useState(1.0);

@@ -39,6 +39,21 @@ p {
 
 .song-box {
     margin-bottom: 40px;
+    .songs-artist-and-return{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .b-return{
+            height: 30px;
+            padding: 0px 15px;
+            border-radius: 5px;
+            background: #00C2FF;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+    }
 }
 
 .genre-name {
