@@ -67,10 +67,10 @@
         }
       }
 
-      .reproductor-duracion {
-        margin-left: 10px;
-      }
+    }
 
+    .reproductor-duracion {
+      margin-left: 10px;
     }
 
     .reproductor-boton {
@@ -107,9 +107,11 @@
       box-shadow: none;
     }
   }
+
   .volume-box {
     display: flex;
     align-items: center;
+
     .reproductor-volumen {
       -webkit-appearance: none;
       appearance: none;
@@ -120,14 +122,14 @@
       margin-left: 10px;
       background: transparent;
     }
-    
+
     .reproductor-volumen::-webkit-slider-runnable-track {
       width: 100%;
       height: 5px;
       cursor: pointer;
       background: #8A8A8A;
     }
-    
+
     .reproductor-volumen::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
@@ -140,14 +142,14 @@
       transition: background .3s;
       margin-top: -5px;
     }
-    
+
     .reproductor-volumen::-moz-range-track {
       width: 100%;
       height: 5px;
       cursor: pointer;
       background: #8A8A8A;
     }
-    
+
     .reproductor-volumen::-moz-range-thumb {
       height: 15px;
       width: 15px;
@@ -157,12 +159,12 @@
       border: none;
       transition: background .3s;
     }
-    
+
     .reproductor-volumen::-moz-range-progress {
       background-color: #00C2FF;
       height: 5px;
     }
-    
+
     .reproductor-volumen::-ms-track {
       width: 100%;
       height: 5px;
@@ -171,7 +173,7 @@
       border-color: transparent;
       color: transparent;
     }
-    
+
     .reproductor-volumen::-ms-thumb {
       height: 15px;
       width: 15px;
@@ -181,45 +183,31 @@
       border: none;
       transition: background .3s;
     }
-    
+
     .reproductor-volumen::-ms-fill-lower {
       background-color: #00C2FF;
     }
-    
+
     .reproductor-volumen::-ms-fill-upper {
       background-color: #8A8A8A;
     }
-    
+
     .reproductor-volumen:focus::-webkit-slider-runnable-track {
       background-color: #8A8A8A;
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1400px) {
-  .reproductor-barra {
-    width: 350px;
+  .reproductor {
+    .reproductor-controls {
+      .reproductor-barra-box {
+        .reproductor-barra {
+          width: 350px;
+        }
+      }
+    }
+
   }
 }
 
@@ -241,26 +229,26 @@
           width: 38px;
           height: 38px;
         }
-      }
 
-      .box-name-artist {
-        padding: 0px 10px;
-        width: 100px;
-        overflow: hidden;
-        z-index: 1;
+        .box-name-artist {
+          padding: 0px 10px;
+          width: 100px;
+          overflow: hidden;
+          z-index: 1;
 
-        .reproductor-nombre {
-          font-size: 11px;
-          width: 100%;
-          font-weight: 700;
+          .reproductor-nombre {
+            font-size: 11px;
+            width: 100%;
+            font-weight: 700;
+          }
+
+          .reproductor-cantante {
+            font-size: 9px;
+            width: 100%;
+            color: #8A8A8A;
+          }
+
         }
-
-        .reproductor-cantante {
-          font-size: 9px;
-          width: 100%;
-          color: #8A8A8A;
-        }
-
       }
 
     }

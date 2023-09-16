@@ -107,8 +107,13 @@ export default function Songs(props) {
                 <div className='songs-container'>
                     <article className='song-box'>
                         <div className='songs-artist-and-return'>
+                            <button onClick={() => handleTogle('default-song')} className='b-return'>
+                                <span class="material-symbols-outlined icon-return">
+                                    keyboard_return
+                                </span>
+                            </button>
                             <h2 style={{ color: '#00C2FF' }}><span>Canciones de </span> {artistName}</h2>
-                            <button onClick={() => handleTogle('default-song')} className='b-return'> Regresar </button>
+
                         </div>
 
                         <div className='section-song'>

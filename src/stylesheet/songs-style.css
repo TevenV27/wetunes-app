@@ -41,17 +41,26 @@ p {
     margin-bottom: 40px;
     .songs-artist-and-return{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
+     
         .b-return{
-            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 35px;
             padding: 0px 15px;
             border-radius: 5px;
-            background: #00C2FF;
+            background: #1b1b1b;
             border: none;
-            color: black;
+            color: #fff;
             cursor: pointer;
+        }
+        .b-return:hover{
+            .icon-return{
+                color: #00C2FF;
+            }
         }
     }
 }
