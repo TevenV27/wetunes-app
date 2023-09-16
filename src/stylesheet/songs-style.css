@@ -254,6 +254,8 @@ p {
 @media (max-width: 769px) {
     .songs-container {
         padding: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
         .box-input-song-name {
             padding: 15px 0px 0px 0px;
             width: 100%;
