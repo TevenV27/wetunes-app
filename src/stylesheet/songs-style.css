@@ -39,12 +39,13 @@ p {
 
 .song-box {
     margin-bottom: 40px;
-    .songs-artist-and-return{
+
+    .songs-artist-and-return {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-     
-        .b-return{
+
+        .b-return {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -57,9 +58,11 @@ p {
             color: #fff;
             cursor: pointer;
         }
-        .b-return:hover{
+
+        .b-return:hover {
             background: #2e2e2e;
-            .icon-return{
+
+            .icon-return {
                 color: #00C2FF;
             }
         }
@@ -81,6 +84,19 @@ p {
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari, Chrome, Edge, Opera */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* CSS3 standard */
 }
 
 .img-box {
@@ -156,6 +172,18 @@ p {
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
 
     .img-song-box {
         position: relative;
@@ -220,6 +248,12 @@ p {
     }
 }
 
+.card-song:active {
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
 
 @media (max-width: 1400px) {
     .section-song {
@@ -266,6 +300,7 @@ p {
         padding: 0;
         padding-top: 40px;
         padding-bottom: 40px;
+
         .box-input-song-name {
             padding: 15px 0px 0px 0px;
             width: 100%;
@@ -276,7 +311,7 @@ p {
             .input-song-name {
                 width: 92%;
                 height: 40px;
-                
+
                 background: #1b1b1b;
                 border: none;
                 border-radius: 5px;

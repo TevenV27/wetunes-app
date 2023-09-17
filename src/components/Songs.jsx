@@ -152,7 +152,7 @@ export default function Songs(props) {
                                 .map((song, songIndex) => (
                                     <div className='card-song' key={songIndex}>
                                         <div className='img-song-box'>
-                                            <img className='img-song' src={song.imagen} alt="song-image" loading="lazy" />
+                                            <img className='img-song' src={song.imagen} alt="song-image" loading="lazy" draggable = "false" />
                                             <span onClick={() => handleSongClick(song)} className="material-icons play-song-icon">
                                                 play_circle
                                             </span>

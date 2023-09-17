@@ -27,7 +27,7 @@
 
     .box-name-artist {
       padding: 0px 10px;
-      width: 150px;
+      
 
       .reproductor-nombre {
         font-size: 16px;
@@ -215,11 +215,12 @@
   .reproductor {
     position: relative;
     background: rgba(22, 22, 22, 0.904);
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
     backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     .information-song {
+      width: 500px;
       .reproductor-imagen-box {
         margin-left: 10px;
 
@@ -232,9 +233,8 @@
 
         .box-name-artist {
           padding: 0px 10px;
-          width: 100px;
           overflow: hidden;
-          z-index: 1;
+          z-index: 20;
 
           .reproductor-nombre {
             font-size: 11px;
@@ -259,6 +259,7 @@
       }
 
       .reproductor-barra-box {
+        
         position: absolute;
         top: 0;
         left: 0;
