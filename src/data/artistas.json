@@ -2,121 +2,121 @@
     {
     "nombre": "Bad Bunny",
     "genero": "Reggaeton",
-    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2022/08/16/62fc0c6fd0ad6.r_d.1170-321-0.jpeg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/bad-bunny.jpg"
     },
     {
     "nombre": "Don Omar",
     "genero": "Reggaeton",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9BhPi9qmYKmLorG86LQz8W8HGPDqkgHtTQ"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/don-omar.jpg"
     },
     {
     "nombre": "Ozuna",
     "genero": "Reggaeton",
-    "imagen": "data:image/jpeg;base64,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"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/ozuna.jpg"
     },
     {
     "nombre": "Karol G",
     "genero": "Reggaeton",
-    "imagen": "https://es.rollingstone.com/wp-content/uploads/2023/08/Karol-G-aposto-por-ella-misma-y-gano.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/karol-g.jpg"
     },
     {
     "nombre": "Manuel Turizo",
     "genero": "Bachata",
-    "imagen": "https://www.billboard.com/wp-content/uploads/2022/10/manuel-turizo-press-photo-La-Industria-INC-billboard-1-1548.jpg?w=942&h=623&crop=1"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/manuel-turizo.jpg"
     },
     {
     "nombre": "Aventura",
     "genero": "Bachata",
-    "imagen": "https://akamai.sscdn.co/uploadfile/letras/fotos/b/b/d/3/bbd3c23f243daa4fdec5378e58fb4855.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/aventura.jpg"
     },
     {
     "nombre": "Romeo Santos",
     "genero": "Bachata",
-    "imagen": "https://imgmedia.larepublica.pe/640x371/larepublica/migration/images/AYRDKVL2PRAJRHBE5R2ST5UIBY.webp"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/romeo-santos.jpg"
     },
     {
     "nombre": "Prince Royce",
     "genero": "Bachata",
-    "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Prince_Royce_on_Acceso_Total.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/prince-royce.jpg"
     },
     {
     "nombre": "The Weekend",
     "genero": "Rock",
-    "imagen": "https://www.eluniverso.com/resizer/0wWe97oxI6FdrIVEQsjb_uq3iMk=/800x450/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/37MSQLA4X5GTJC4ZL7XKSN6CLE.jpeg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/the-weekend.jpg"
     },
     {
     "nombre": "Artic Monkeys",
     "genero": "Rock",
-    "imagen": "https://kubomusical.com/wp-content/uploads/2020/03/arctic-monkeys.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/artic-monkeys.jpg"
     },
     {
     "nombre": "Queen",
     "genero": "Rock",
-    "imagen": "https://www.biografiasyvidas.com/biografia/q/fotos/queen.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/queen.jpg"
     },
     {
     "nombre": "Imagine Dragons",
     "genero": "Rock",
-    "imagen": "https://www.coca-cola.com/content/dam/onexp/global/central/offerings/coke-studio/artists/2_Imagine_Dragons_by_Eric_Ray_Davidson_GREEN_04_16-9.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/imagine-dragons.jpg"
     },
     {
     "nombre": "Cold Play",
     "genero": "Rock",
-    "imagen": "https://lumiere-a.akamaihd.net/v1/images/coldplay_en_chile_2022_45e7eeb2.jpeg?region=0,0,1280,722&width=960"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/cold-play.jpg"
     },
     {
     "nombre": "Avicii",
     "genero": "Electronica",
-    "imagen": "https://www.latercera.com/resizer/TTvTc5CAmq9BiMzjqUk5sY89Sxk=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/KOAYEACGZJDATCQ4Z2CZRNJZW4.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/avicii.jpg"
     },
     {
     "nombre": "The Chainsmokers",
     "genero": "Electronica",
-    "imagen": "https://i.scdn.co/image/ab6761610000e5ebdb68d678df6d89bf8a55d052"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/the-chainsmokers.jpg"
     },
     {
     "nombre": "Tom Odell",
     "genero": "Rock",
-    "imagen": "https://akamai.sscdn.co/uploadfile/letras/albuns/4/b/9/f/319741386265101.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/tom-odell.jpg"
     },
     {
     "nombre": "Adolescentes Orquesta",
     "genero": "Salsa",
-    "imagen": "https://lastfm.freetls.fastly.net/i/u/ar0/79f5855068fe7b518984abe587f987bd.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/adolescentes.jpg"
     },
     {
     "nombre": "Chichi Peralta",
     "genero": "Salsa",
-    "imagen": "https://www.clarin.com/img/2022/09/14/chichi-peralta-conocido-por-sus___6OcaDmV5o_2000x1500__1.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/chichi-peralta.jpg"
     },
     {
     "nombre": "Adalberto Santiago",
     "genero": "Salsa",
-    "imagen": "https://portal.andina.pe/EDPfotografia/Thumbnail/2014/10/13/0000265617W.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/adalberto-santiago.jpg"
     },
     {
     "nombre": "Frankie Ruiz",
     "genero": "Salsa",
-    "imagen": "https://www.biografiasyvidas.com/biografia/r/fotos/ruiz_frankie_2.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/frankie-ruiz.jpg"
     },
     {
         "nombre": "Joe Arroyo",
         "genero": "Salsa",
-        "imagen": "https://www.elheraldo.co/sites/default/files/articulo/2022/10/31/1a-joe_arroyo.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/joe-arroyo.jpg"
     },
     {
         "nombre": "Marc Anthony",
         "genero": "Salsa",
-        "imagen": "https://www.eluniverso.com/resizer/AhKllsbkJDICVmKd5k1WCzdFeOc=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/OEMU4T3CSBGLNFJQUACWXS763Q.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/marc-anthony.jpg"
     },
     {
         "nombre": "Willie Colon",
         "genero": "Salsa",
-        "imagen": "https://rtvc-assets-radionacional-v2.s3.amazonaws.com/s3fs-public/senalradio/articulo-noticia/galeriaimagen/lp_-_tp_secrets_-willie_colon2.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/willie-colon.jpg"
     },
     {
         "nombre": "Luis Enrique",
         "genero": "Salsa",
-        "imagen": "https://cdn.aarp.net/content/dam/aarp/entertainment/art_music/2017/09/1140-luis-enrique-headshot-esp.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/artists/luis-enrique.jpg"
     }
 ]

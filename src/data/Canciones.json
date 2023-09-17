@@ -5,7 +5,7 @@
     "genero": "salsa",
     "duracion": "4:45",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/deseandote.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000579930905-ytj92d-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/deseandote.jpg"
     },
     {
     "nombre": "La noche mas linda",
@@ -13,7 +13,7 @@
     "genero": "salsa",
     "duracion": "5:40",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-noche-mas-linda.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000215594085-b3xu7b-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/la-noche-mas-linda.jpeg"
     },
     {
     "nombre": "Procura",
@@ -21,7 +21,7 @@
     "genero": "salsa",
     "duracion": "4:32",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/procura.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-D4sGGFRT6MYK-0-t500x500.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/procura.jpg"
     },
     {
     "nombre": "Virgen",
@@ -29,7 +29,7 @@
     "genero": "salsa",
     "duracion": "4:31",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/virgen.mp3",
-    "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ac/f9/f2/acf9f236-eae7-023a-120d-6c071797512d/cover.jpg/486x486bb.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/virgen.jpg"
     },
     {
     "nombre": "Hymn for the weekend",
@@ -37,7 +37,7 @@
     "genero": "rock",
     "duracion": "4:18",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/hymn-for-the weekend.mp3",
-    "imagen": "https://img.wattpad.com/35e66cdc3f77e869eaf3735159cb049cbb9662d6/68747470733a2f2f692e6779617a6f2e636f6d2f35373364653664386531303039303064306234626432343363343030346538622e706e67?s=fit&h=360&w=360&q=80"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/hymn-for-the-weekend.jpg"
     },
     {
     "nombre": "Demons",
@@ -45,7 +45,7 @@
     "genero": "rock",
     "duracion": "3:02",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/demons.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000241938427-nscbv9-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/demons.jpg"
     },
     {
     "nombre": "Believer",
@@ -53,7 +53,7 @@
     "genero": "rock",
     "duracion": "3:02",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/believer.mp3",
-    "imagen": "https://paraisodeloslibrosperdidos.files.wordpress.com/2017/10/c-wprtuxyaah9gj.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/believer.jpg"
     },
     {
     "nombre": "We Will Rock You",
@@ -61,7 +61,7 @@
     "genero": "rock",
     "duracion": "2:05",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/we-will-rock-you.mp3",
-    "imagen": "https://cdn.freebiesupply.com/logos/large/2x/we-will-rock-you-logo-black-and-white.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/we-will-rock-you.jpg"
     },
     {
     "nombre": "Necio",
@@ -69,7 +69,7 @@
     "genero": "bachata",
     "duracion": "4:39",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/necio.mp3",
-    "imagen": "https://i.scdn.co/image/ab67616d0000b273e9da42890bbd629df1e8f640"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/necio.jpg"
     },
     {
     "nombre": "Imitadora",
@@ -77,7 +77,7 @@
     "genero": "bachata",
     "duracion": "3:56",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/imitadora.mp3",
-    "imagen": "https://m.media-amazon.com/images/M/MV5BZmM0OTZkOWItYzY2OC00MzcxLThiNTktM2IxNjY3MTA3ZTVmXkEyXkFqcGdeQXVyMzM0NTc2MTE@._V1_.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/imitadora.jpg"
     },
     {
     "nombre": "La Carretera",
@@ -85,7 +85,7 @@
     "genero": "bachata",
     "duracion": "3:56",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-carretera.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000196682781-76gjbq-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/la-carretera.jpg"
     },
     {
     "nombre": "El Amor Que Perdimos",
@@ -93,7 +93,7 @@
     "genero": "bachata",
     "duracion": "4:07",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/el-amor-que-perdimos.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000134076854-ha0zhp-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/el-amor-que-perdimos.jpg"
     },
     {
     "nombre": "Una Vez",
@@ -104,7 +104,7 @@
     "genero": "reggaeton",
     "duracion": "3:52",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/una-vez.mp3",
-    "imagen": "https://f4.bcbits.com/img/a0809846453_10.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/una-vez.jpg"
     },
     {
     "nombre": "Diva Virtual",
@@ -112,7 +112,7 @@
     "genero": "reggaeton",
     "duracion": "4:01",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/diva-virtual.mp3",
-    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/VirtualDiva2009.png/220px-VirtualDiva2009.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/diva-virtual.jpg"
     },
     {
     "nombre": "Gato de Noche",
@@ -120,7 +120,7 @@
     "genero": "reggaeton",
     "duracion": "3:48",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gato-de-noche.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-twgMyBVp9zz7UCRI-b40k2A-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/gato-de-noche.jpg"
     },
     {
     "nombre": "Tusa",
@@ -131,7 +131,7 @@
     "genero": "reggaeton",
     "duracion": "3:22",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tusa.mp3",
-    "imagen": "https://www.elsoldepuebla.com.mx/incoming/h8e2tr-tusa-.png/ALTERNATES/LANDSCAPE_1140/tusa%20.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/tusa.jpg"
     },
     {
     "nombre": "Caramelo",
@@ -143,7 +143,7 @@
     "genero": "reggaeton",
     "duracion": "3:22",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/caramelo.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-2UdM89ad9xmz-0-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/caramelo.jpg"
     },
     {
     "nombre": "Animals",
@@ -151,7 +151,7 @@
     "genero": "electronica",
     "duracion": "5:04",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/animals.mp3",
-    "imagen": "https://cdns-images.dzcdn.net/images/cover/e1573b46aa6255afcf65f63b63aa82da/500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/animals.jpg"
     },
     {
         "nombre": "Titanium",
@@ -159,7 +159,7 @@
         "genero": "electronica",
         "duracion": "4:03",
         "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/titanium.mp3",
-        "imagen": "https://cdns-images.dzcdn.net/images/cover/b1da2dd795492946f90722f6fa871adb/500x500.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/titanium.jpg"
     },
     {
         "nombre": "In my mind",
@@ -167,7 +167,7 @@
         "genero": "electronica",
         "duracion": "3:02",
         "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/in-my-mind.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-PefXqLQdSaB45Bgu-KMOyZA-t500x500.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/in-my-mind.jpg"
     },
     {
         "nombre": "Faded",
@@ -175,7 +175,7 @@
         "genero":"electronica",
         "duracion":"3:33",
         "cancion":"https://raw.githubusercontent.com/TevenV27/song-server/main/faded.mp3",
-        "imagen":"https://i1.sndcdn.com/artworks-ev0a8a8enTB0JNz4-Dlryzg-t500x500.jpg"
+        "imagen":"https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/faded.jpg"
     },
     {
     "nombre": "Tsunami",
@@ -186,7 +186,7 @@
     "genero": "electronica",
     "duracion": "3:58",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/tsunami.mp3",
-    "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f2/3f/73/f23f73c7-82e6-a258-278a-900d06da4bb4/8712944442830.jpg/486x486bb.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/tsunami.jpg"
     },
     {
     "nombre": "Ascend",
@@ -194,7 +194,7 @@
     "genero": "electronica",
     "duracion": "3:20",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/ascend-dezko.mp3",
-    "imagen": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/44/64/634464b6-89d3-9763-8487-e9d4031e2c91/197189222627.jpg/1200x1200bf-60.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/ascend.jpg"
     },
     {
     "nombre": "Lala",
@@ -202,7 +202,7 @@
     "genero": "reggaeton",
     "duracion": "3:19",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/lala.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-Sfjvzl1wagqx-0-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/lala.jpg"
     },
     {
     "nombre": "Columbia",
@@ -210,7 +210,7 @@
     "genero": "reggaeton",
     "duracion": "3:07",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/columbia.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000169745398-hhvop9-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/columbia.jpg"
     },
     {
     "nombre": "Danza Kuduro",
@@ -226,7 +226,7 @@
     "genero": "reggaeton",
     "duracion": "4:50",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/despacito.mp3",
-    "imagen": "https://i.scdn.co/image/ab67616d0000b273a5971936e3b8d91f8b616b17"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/danza-kuduro.jpg"
     },
     {
     "nombre": "Gasolina",
@@ -234,7 +234,7 @@
     "genero": "reggaeton",
     "duracion": "3:14",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/gasolina.mp3",
-    "imagen": "https://i.scdn.co/image/ab67616d0000b2737f68406bafad6162f6acdf8a"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/gasolina.jpg"
     },
     {
     "nombre": "The Nights",
@@ -242,7 +242,7 @@
     "genero": "electronica",
     "duracion": "2:54",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/the-nights.mp3",
-    "imagen": "https://i.pinimg.com/originals/ee/2c/3c/ee2c3c07ae423953fec4419232754f5d.png"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/the-nights.jpg"
     },
     {
     "nombre": "Don't let me down",
@@ -250,7 +250,7 @@
     "genero": "electronica",
     "duracion": "3:28",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/don't-let-me-down.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000169745398-hhvop9-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/don't-let-me-down.jpg"
     },
     {
     "nombre": "Another Love",
@@ -258,7 +258,7 @@
     "genero": "rock",
     "duracion": "4:04",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/another-love.mp3",
-    "imagen": "https://i.scdn.co/image/ab67616d0000b2731917a0f3f4152622a040913f"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/another-love.jpg"
     },
     {
     "nombre": "I Wanna Be Yours",
@@ -266,7 +266,7 @@
     "genero": "rock",
     "duracion": "3:04",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/i-wanna-be-yours.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-hAiTfsOSiHL4nIM1-LHNs3Q-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/i-wanna-be-yours.jpg"
     },
     {
     "nombre": "Starboy",
@@ -274,7 +274,7 @@
     "genero": "rock",
     "duracion": "3:45",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/starboy.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-3TeyJFS7lzKn9r5B-PpqXwg-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/star-boy.jpg"
     },
     {
     "nombre": "La Bachata",
@@ -282,7 +282,7 @@
     "genero": "bachata",
     "duracion": "2:42",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-bachata.mp3",
-    "imagen": "https://i.scdn.co/image/ab67616d0000b27316113fd9f4450cd2167bc493"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/la-bachata.jpg"
     },
     {
     "nombre": "Eres Mia",
@@ -290,7 +290,7 @@
     "genero": "bachata",
     "duracion": "4:11",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/eres-mia.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000093528394-vggdro-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/eres-mia.jpg"
     },
     {
     "nombre": "Rechazame",
@@ -298,7 +298,7 @@
     "genero": "bachata",
     "duracion": "3:45",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/rechazame.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-Ni2Hd3BzO9i3g5eE-AJ3uGA-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/rechazame.jpg"
     },
     {
     "nombre": "Obsesion",
@@ -306,7 +306,7 @@
     "genero": "bachata",
     "duracion": "4:13",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/obsesion.mp3",
-    "imagen": "https://i.scdn.co/image/ab67616d0000b273e1afa83bd73aa80c0ff0ee34"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/obsesion.jpg"
     },
     {
         "nombre": "Yo No Se Mañana",
@@ -314,7 +314,7 @@
         "genero": "salsa",
         "duracion": "4:19",
         "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/yo-no-se-mañana.mp3",
-        "imagen": "https://i.scdn.co/image/ab67616d0000b2737dc8600bde080d92cd924165"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/yo-no-se-mañana.jpg"
     },
     {
         "nombre": "La Rebelion",
@@ -322,7 +322,7 @@
         "genero": "salsa",
         "duracion": "4:40",
         "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/la-rebelion.mp3",
-        "imagen": "https://radiosalsamatine.com/wp-content/uploads/2020/10/la-rebelion-1-1-1.png"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/la-rebelion.jpg"
     },
     {
         "nombre": "Vivir Mi vida",
@@ -330,7 +330,7 @@
         "genero": "salsa",
         "duracion": "4:11",
         "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/vivir-mi-vida.mp3",
-        "imagen": "https://akamai.sscdn.co/uploadfile/letras/albuns/5/4/2/b/562141485956440.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/vivir-mi-vida.jpg"
     },
     {
         "nombre": "Talento de Television",
@@ -338,7 +338,7 @@
         "genero": "salsa",
         "duracion": "4:38",
         "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/talento-de-television.mp3",
-        "imagen": "https://i1.sndcdn.com/artworks-qhMeq6VZ5tQxGKuU-75XSHg-t500x500.jpg"
+        "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/talento-de-television.jpg"
     },
     {
     "nombre": "Propuesta Indecente",
@@ -346,6 +346,6 @@
     "genero": "bachata",
     "duracion": "3:53",
     "cancion": "https://raw.githubusercontent.com/TevenV27/song-server/main/propuesta-indecente.mp3",
-    "imagen": "https://i1.sndcdn.com/artworks-000054092787-nba7jf-t500x500.jpg"
+    "imagen": "https://raw.githubusercontent.com/TevenV27/server-images/main/projects/wetunes-images/songs/propuesta-indecente.jpg"
     }
     ]
