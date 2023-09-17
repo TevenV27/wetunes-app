@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 20px;
-    width: 330px;
+    width: 300px;
     height: 100vh;
     background: #1b1b1b;
     align-items: center;
@@ -57,7 +57,7 @@
     .container-song-artist {
       display: flex;
       justify-content: space-between;
-      width: calc(100vw - 330px);
+      width: calc(100vw - 300px);
       height: calc(100vh - 70px);
 
       .songs-box {
@@ -124,8 +124,6 @@
 @media (max-width: 1400px) {
   .main-container {
     .navigation-box {
-      width: 15%;
-
       .name-app {
         font-size: 30px;
       }
