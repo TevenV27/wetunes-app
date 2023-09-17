@@ -2,13 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../stylesheet/reproductor.css';
 
 const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
-  const lastPlayedSong = localStorage.getItem('lastPlayedSong');
-  const initialIsPlaying = lastPlayedSong === audioPath ? (localStorage.getItem('isPlaying') === 'true' || false) : false;
-  const initialCurrentTime = lastPlayedSong === audioPath ? parseFloat(localStorage.getItem('currentTime')) || 0 : 0;
-
   const [isPlaying, setIsPlaying] = useState(true);
   const [duration, setDuration] = useState(0);
-  const [currentTime, setCurrentTime] = useState(initialCurrentTime);
+  const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(1.0);
 
   const audioRef = useRef(null);
@@ -19,10 +15,6 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
 
     if (isPlaying && audioElement.paused) {
       audioElement.play();
-    }
-
-    if (initialCurrentTime) {
-      audioElement.currentTime = initialCurrentTime;
     }
 
     const handleTimeUpdate = () => {
@@ -46,13 +38,7 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
       }
     };
 
-    const savedVolume = localStorage.getItem('volume');
-    if (savedVolume && audioElement) {
-      audioElement.volume = parseFloat(savedVolume);
-      setVolume(parseFloat(savedVolume));
-    } else {
-      audioElement.volume = 1.0;
-    }
+    audioElement.volume = volume;
 
     audioElement.addEventListener('timeupdate', handleTimeUpdate);
     audioElement.addEventListener('loadedmetadata', () => {
@@ -67,7 +53,7 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
       audioElement.removeEventListener('timeupdate', handleTimeUpdate);
       audioElement.removeEventListener('ended', handleAudioEnd);
     };
-  }, [audioPath, duration]);
+  }, [isPlaying, duration, volume]);
 
   useEffect(() => {
     if (isPlaying && audioRef.current.paused) {
@@ -76,12 +62,6 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
       audioRef.current.pause();
     }
   }, [isPlaying]);
-
-  useEffect(() => {
-    localStorage.setItem('isPlaying', isPlaying);
-    localStorage.setItem('currentTime', currentTime);
-    localStorage.setItem('lastPlayedSong', audioPath);
-  }, [isPlaying, currentTime, audioPath]);
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
@@ -99,7 +79,6 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
     const newVolume = parseFloat(e.target.value);
     audioRef.current.volume = newVolume;
     setVolume(newVolume);
-    localStorage.setItem('volume', newVolume.toString());
   };
 
   return (
@@ -120,11 +99,9 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
         <span className="reproductor-tiempo">{Math.floor(currentTime / 60)}:{('0' + Math.floor(currentTime % 60)).slice(-2)}</span>
         <div className='reproductor-barra-box'>
           <div className="reproductor-barra" onClick={handleProgressBarClick}>
-
             <div ref={progressRef} className="reproductor-progreso"></div>
           </div>
         </div>
-
         <span className="reproductor-duracion">{Math.floor(duration / 60)}:{('0' + Math.floor(duration % 60)).slice(-2)}</span>
         <button onClick={togglePlay} className="reproductor-boton">{
           isPlaying

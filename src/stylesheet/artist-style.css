@@ -1,24 +1,39 @@
+.input-name-artist {
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    background: #222222;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 .artist-container {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    flex: 1;
     gap: 15px;
-
+    overflow-y: scroll;
+    padding-bottom: 10px;
     .artist-card {
-
+        background: #222222;
         position: relative;
         width: 90%;
-        height: 69px;
-        overflow: hidden;
+        min-height: 65px;
+        max-height: 65px;
         border-radius: 5px;
         cursor: pointer;
+        display: flex;
+        
 
         .img-artist {
             width: 100%;
-            transform: translateY(-20%);
-            filter: blur(1px) brightness(40%);
+            object-fit: cover;
+            /* Evita la distorsión y ajusta la imagen completamente */
+            filter: blur(0.7px) brightness(35%);
+            border-radius: 5px;
         }
 
         .name-artist {
@@ -43,27 +58,29 @@
             text-shadow: 3px 3px 3px rgb(0, 0, 0);
         }
     }
+}
 
-    .input-name-artist {
-        width: 90%;
-        height: 40px;
-        padding-left: 10px;
-        background: #222222;
-        border: none;
-        border-radius: 5px;
-    }
+.artist-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.artist-container::-webkit-scrollbar-track {
+    width: 0px;
+}
+
+.artist-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 @media (max-width: 1400px) {
     .artist-container {
         .artist-card {
-            height: 50px;
+            min-height: 50px;
+            /* Ajusta la altura según tus necesidades */
 
             .name-artist {
                 font-size: 17px;
             }
         }
-
-
     }
 }

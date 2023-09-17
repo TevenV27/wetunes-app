@@ -69,18 +69,14 @@
 
 
       .rigth-panel-box {
-        width: calc(100vw - (330px + 1258px));
-        max-width: 400px;
-        height: 100%;
+        width: 300px;
+        max-width: 300px;
+        max-height: calc(100vh - 70px);
         background: #1b1b1b;
-        overflow-y: scroll;
-        padding-bottom: 30px;
-
-
-
         .user-info-box {
+          z-index: 1;
           width: 100%;
-          height: 76px;
+          min-height: 76px;
           background: #101010;
           display: flex;
           align-items: center;
@@ -88,10 +84,10 @@
           font-weight: 700;
           font-size: 22px;
           gap: 22px;
-
+       
           .avatar-user {
-            width: 53px;
-            height: 53px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             cursor: pointer;
           }
@@ -102,7 +98,7 @@
           flex-direction: column;
           align-items: center;
           width: 100%;
-
+          height: calc(100vh - 76px - 70px);
           .title-artist {
             font-weight: 700;
             font-size: 22px;
@@ -111,24 +107,14 @@
         }
       }
 
-      .rigth-panel-box::-webkit-scrollbar {
-        width: 0px;
-      }
-
-      .rigth-panel-box::-webkit-scrollbar-track {
-        width: 0px;
-      }
-
-      .rigth-panel-box::-webkit-scrollbar-thumb {
-        background-color: transparent;
-        border-radius: 3px;
-      }
     }
 
     .song-control {
       width: 100%;
       height: 70px;
       background: #101010;
+ 
+     
     }
 
   }

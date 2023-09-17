@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import artist from '../data/artistas.json';
 import '../stylesheet/artist-style.css';
 
 export default function Artist(props) {
-  const [artistData, setArtistData] = useState([]);
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    setArtistData(artist);
+    // Precarga las imágenes de los artistas
+    preloadImages(artist);
   }, []);
 
   const handleSearchInputChange = (event) => {
@@ -18,13 +18,23 @@ export default function Artist(props) {
     props.onArtistClick(artist);
   };
 
-  // Filtrar la lista de artistas en función del valor de búsqueda
-  const filteredArtists = artistData.filter((artist) =>
-    artist.nombre.toLowerCase().includes(searchText.toLowerCase())
-  );
+  // Filtrar la lista de artistas en función del valor de búsqueda (memoizado)
+  const filteredArtists = useMemo(() => {
+    return artist.filter((artist) =>
+      artist.nombre.toLowerCase().includes(searchText.toLowerCase())
+    );
+  }, [searchText]);
+
+  // Función para precargar imágenes
+  function preloadImages(artistsToPreload) {
+    artistsToPreload.forEach((artist) => {
+      const img = new Image();
+      img.src = artist.imagen;
+    });
+  }
 
   return (
-    <div className='artist-container'>
+    <>
       <input
         className='input-name-artist'
         type="text"
@@ -32,12 +42,17 @@ export default function Artist(props) {
         value={searchText}
         onChange={handleSearchInputChange}
       />
-      {filteredArtists.map((artist, artistIndex) => (
-        <div className='artist-card' onClick={() => handleArtistClick(artist)} key={artistIndex}>
-          <img className='img-artist' src={artist.imagen} alt="artist-image" />
-          <p className='name-artist'> {artist.nombre}</p>
-        </div>
-      ))}
-    </div>
+
+      <div className='artist-container'>
+
+        {filteredArtists.map((artist, artistIndex) => (
+          <div className='artist-card' onClick={() => handleArtistClick(artist)} key={artistIndex}>
+            <img className='img-artist' src={artist.imagen} alt="artist-image" />
+            <p className='name-artist'> {artist.nombre}</p>
+          </div>
+        ))}
+      </div>
+    </>
+
   );
 }
