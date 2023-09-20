@@ -60,15 +60,16 @@ function App() {
                             <span style={{ color: "#00C2FF" }}>We</span>Tunes
                         </h1>
                     </div>
-                    <button className='b-menu' onClick={toggleMenu}>
-                        <span className="material-symbols-outlined menu-icon">
-                            menu
-                        </span>
-                    </button>
+                    <img
+                        className='avatar-user'
+                        src="https://static.vecteezy.com/system/resources/previews/009/267/561/original/user-icon-design-free-png.png"
+                        alt=""
+                        onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
+                    />
                     {isMenuOpen && (
                         <div className='user-menu'>
                             <button className='edit-profile-button'>
-                                <span class="material-symbols-outlined">
+                                <span className="material-symbols-outlined">
                                     settings
                                 </span>Editar Perfil</button>
                             <button className='logout-button'>

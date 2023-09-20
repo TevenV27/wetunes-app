@@ -265,17 +265,18 @@
 
       .navigation-box-mobile {
         width: 100%;
+        height: 45px;
         display: flex;
         position: fixed;
         z-index: 1;
         justify-content: space-between;
         align-items: center;
         background: #1b1b1b;
-
+        padding: 0px 10px;
         .container-logo-app {
           display: flex;
           align-items: center;
-          margin-left: 10PX;
+          
           gap: 5px;
           padding: 5px 0px;
 
@@ -290,15 +291,9 @@
         }
 
 
-        .b-menu {
-          border: none;
-          background: none;
-          display: flex;
-          align-items: center;
-
-          .menu-icon {
-            font-size: 40px;
-          }
+        .avatar-user{
+          border-radius: 50%;
+          width: 2.2rem;
         }
         .user-menu {
           z-index: 1;
