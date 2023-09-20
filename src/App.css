@@ -385,9 +385,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: #cccccc;
             .text-option{
+              color: #fff;
               font-size: xx-small;
-              font-weight: 300;
+              font-weight: 700;
             }
           }
         }
