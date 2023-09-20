@@ -131,14 +131,25 @@ function App() {
                 </div>
                 <div className='navigation-mobile-controls'>
                     <div className='navigation-mobile-controls-box'>
-                        <span className='material-symbols-outlined b-option'>
+                        <span class="material-symbols-rounded b-option">
                             home
+                            <p className='text-option'>
+                                Inicio
+                            </p>
                         </span>
-                        <span className='material-symbols-outlined b-option'>
-                            search
+
+                        <span class="material-symbols-rounded b-option">
+                            star
+                            <p className='text-option'>
+                                Artistas
+                            </p>
                         </span>
-                        <span className='material-symbols-outlined b-option'>
-                            library_music
+
+                        <span class="material-symbols-rounded b-option">
+                            grading
+                            <p className='text-option'>
+                                Biblioteca
+                            </p>
                         </span>
                     </div>
                 </div>

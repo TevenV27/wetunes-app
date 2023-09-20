@@ -380,7 +380,15 @@
           justify-content: space-evenly;
           align-items: center;
           .b-option {
-            font-size: 35px;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .text-option{
+              font-size: xx-small;
+              font-weight: 300;
+            }
           }
         }
       }
