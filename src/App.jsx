@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Songs from './components/Songs';
 import Artist from './components/Artist';
 import Reproductor from './components/Reproductor';
@@ -9,6 +9,8 @@ function App() {
     const [selectedArtist, setSelectedArtist] = useState({
         artistName: 'default-song',
     });
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleSongClick = (song) => {
         setSelectedSong({
@@ -25,26 +27,25 @@ function App() {
         });
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <main className='main-container'>
             <section className='navigation-box'>
                 <div>
                     <div className='logo-box'>
-
                         <svg className='logo-app' xmlns="http://www.w3.org/2000/svg" id="Capa_2" data-name="Capa 2" viewBox="0 0 330.01 302">
                             <path className="cls-2" fill='#00C2FF' d="m240.77,0l-106.83,26.71S39.5,1.95,8.23,39.73c0,0-31.92,48.85,29.96,168.06,0,0-16.28,53.41,20.19,59.93,0,0-45.53-41.79,31.33-79.57,0,0,11.01-5.76,22.08-3.8l-12.38-110.73L240.77,0Z" />
                             <path className="cls-1" fill='#ffffff' d="m204.29,66.44l-83.91,33.87,11.19,114.01s2.01,41.9-45.83,56.65c0,0,41.69,49.5,118.55,23.45,0,0,125.72-46.94,125.72-132.23,0,0-2.8-43.11-89.24-91.84v88.59s21.6,34.09-11.07,61.88c-33.33,28.35-58.29,9.94-58.29,9.94,0,0-17.9-17.4-1.43-51.63,0,0,9.56-23.45,42.13-28.66l-7.82-84.03Z" />
                         </svg>
-
-
                         <h1 className='name-app'>
                             <span style={{ color: "#00C2FF" }}>We</span>Tunes
                         </h1>
-
                     </div>
                     <hr className='line-split' />
                 </div>
-
                 <button className='b-close-session'>Cerrar Sesión</button>
             </section>
 
@@ -55,15 +56,26 @@ function App() {
                             <path className="cls-2" fill='#00C2FF' d="m240.77,0l-106.83,26.71S39.5,1.95,8.23,39.73c0,0-31.92,48.85,29.96,168.06,0,0-16.28,53.41,20.19,59.93,0,0-45.53-41.79,31.33-79.57,0,0,11.01-5.76,22.08-3.8l-12.38-110.73L240.77,0Z" />
                             <path className="cls-1" fill='#ffffff' d="m204.29,66.44l-83.91,33.87,11.19,114.01s2.01,41.9-45.83,56.65c0,0,41.69,49.5,118.55,23.45,0,0,125.72-46.94,125.72-132.23,0,0-2.8-43.11-89.24-91.84v88.59s21.6,34.09-11.07,61.88c-33.33,28.35-58.29,9.94-58.29,9.94,0,0-17.9-17.4-1.43-51.63,0,0,9.56-23.45,42.13-28.66l-7.82-84.03Z" />
                         </svg>
-                        <h1 className='name-app'>
+                        <h1 className='name-app '>
                             <span style={{ color: "#00C2FF" }}>We</span>Tunes
                         </h1>
                     </div>
-                    <button className='b-menu'>
+                    <button className='b-menu' onClick={toggleMenu}>
                         <span className="material-symbols-outlined menu-icon">
                             menu
                         </span>
                     </button>
+                    {isMenuOpen && (
+                        <div className='user-menu'>
+                            <button className='edit-profile-button'>
+                                <span class="material-symbols-outlined">
+                                    settings
+                                </span>Editar Perfil</button>
+                            <button className='logout-button'>
+
+                                Cerrar Sesión</button>
+                        </div>
+                    )}
                 </section>
                 <div className='container-song-artist'>
                     <div className='songs-box'>
@@ -74,14 +86,31 @@ function App() {
                     </div>
                     <div className='rigth-panel-box'>
                         <div className='user-info-box'>
-                            <span className='name-user'>
+
+                            <span
+                                className='name-user'
+
+                            >
                                 <span style={{ color: "#00C2FF" }}>Steven</span> Victoria
                             </span>
                             <img
                                 className='avatar-user'
-                                src="https://pbs.twimg.com/profile_images/1471595683660587010/p-wPFxIp_400x400.jpg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyz-77X11MoGE22xVjjPhbpW6lPj6I0SkcTQ&usqp=CAU"
                                 alt=""
+                                onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
                             />
+                            {isMenuOpen && (
+                                <div className='user-menu'>
+                                    <button className='edit-profile-button'>
+                                        <span class="material-symbols-outlined">
+                                            settings
+                                        </span>Editar Perfil</button>
+                                    <button className='logout-button'>
+
+                                        Cerrar Sesión</button>
+                                </div>
+                            )}
+
                         </div>
                         <div className='artist-box'>
                             <h2 className='title-artist'>ARTISTAS</h2>

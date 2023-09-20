@@ -54,7 +54,7 @@
     .reproductor-barra-box {
       .reproductor-barra {
         cursor: pointer;
-        width: 626px;
+        width: calc(300px);
         height: 5px;
         background: #8A8A8A;
         margin-left: 10px;

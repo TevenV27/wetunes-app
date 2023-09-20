@@ -1,11 +1,11 @@
 .input-name-artist {
-    width: 90%;
+    width: 85%;
     height: 40px;
     padding-left: 10px;
     background: #222222;
     border: none;
     border-radius: 5px;
-    margin-bottom: 15px;
+
 }
 
 .artist-container {
@@ -13,26 +13,24 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    flex: 1;
     gap: 15px;
     overflow-y: scroll;
-    padding-bottom: 10px;
+    padding: 15px 0px;
     .artist-card {
         background: #222222;
         position: relative;
-        width: 90%;
+        width: 85%;
         min-height: 65px;
         max-height: 65px;
         border-radius: 5px;
         cursor: pointer;
         display: flex;
         
-
         .img-artist {
             width: 100%;
             object-fit: cover;
             /* Evita la distorsión y ajusta la imagen completamente */
-            filter: blur(0.7px) brightness(35%);
+            filter: blur(0.7px) brightness(40%);
             border-radius: 5px;
         }
 
@@ -77,7 +75,6 @@
         .artist-card {
             min-height: 50px;
             /* Ajusta la altura según tus necesidades */
-
             .name-artist {
                 font-size: 17px;
             }
