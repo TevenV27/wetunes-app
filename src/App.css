@@ -369,8 +369,8 @@
         position: absolute;
         bottom: 0;
         left: 50%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.768) 70%, rgba(0, 0, 0, 0.488));
-        box-shadow: rgba(0, 0, 0, 0.561) 0px -15px 15px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%,rgba(0, 0, 0, 0.8) 50%,rgba(0, 0, 0, 0.4) 70% ,rgba(0, 0, 0, 0) 100%);
+      
         transform: translateX(-50%);
         .navigation-mobile-controls-box {
           width: 100%;
