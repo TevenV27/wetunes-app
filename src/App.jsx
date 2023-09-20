@@ -129,6 +129,19 @@ function App() {
                         />
                     )}
                 </div>
+                <div className='navigation-mobile-controls'>
+                    <div className='navigation-mobile-controls-box'>
+                        <span className='material-symbols-outlined b-option'>
+                            home
+                        </span>
+                        <span className='material-symbols-outlined b-option'>
+                            search
+                        </span>
+                        <span className='material-symbols-outlined b-option'>
+                            library_music
+                        </span>
+                    </div>
+                </div>
             </section>
         </main>
     );
