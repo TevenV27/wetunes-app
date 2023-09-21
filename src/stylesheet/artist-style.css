@@ -95,7 +95,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(calc(50% - 10px), 1fr));
         gap: 5px;
-        padding: 0px 10px 60px 10px;
+        padding: 0px 10px 170px 10px;
         justify-content: flex-start; /* Alinea las columnas al principio */
         align-content: flex-start; /* Alinea las filas al principio */
         overflow-y: scroll;
