@@ -1,11 +1,19 @@
-.container{
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    color: #1B1B1B;
+}
+
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #1B1B1B;
-    .login-box{
+
+    .login-box {
         width: 450px;
         height: 500px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -16,41 +24,64 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .logo-box{
+
+        .logo-box {
             padding: 0px 0px 30px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            .logo-app{
+
+            .logo-app {
                 width: 100px;
-                
+
             }
-            .name-app{
+
+            .name-app {
                 font-size: 2rem;
             }
         }
-        .login-form{
+
+        .login-form {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 10px;
             width: 100%;
-            .input-email{
+
+            .box-names {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .input-firstName {
+                    width: calc(50% - 5px);
+                    height: 40px;
+
+                }
+
+                .input-lastName {
+                    width: calc(50% - 5px);
+                    height: 40px;
+                    border-radius: 5px;
+                }
+            }
+
+            .input-email {
                 width: 70%;
                 height: 40px;
-                border-radius: 5px;
-                border: none;
-                padding: 15px;
-                color: #1B1B1B;
 
-                
+
+
             }
-            .forget-pasword{
+
+            .forget-pasword {
                 padding: 5px 0px 10px 0px;
             }
-            .b-singIn{
+
+            .b-singIn {
                 width: 60%;
                 height: 40px;
                 background: #00C2FF;
@@ -62,8 +93,23 @@
                 font-size: 1.2rem;
             }
         }
-        .redirect-register{
+
+        .b-return-login{
             padding: 10px;
+            cursor: pointer;
+        }
+        .b-return-login:hover{
+            color: #00C2FF;
+        }
+        .redirect-register {
+            padding: 10px;
+            display: flex;
+            gap: 5px;
+            
+            .b-register {
+                color: #00C2FF;
+                cursor: pointer;
+            }
         }
     }
 }

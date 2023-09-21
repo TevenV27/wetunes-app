@@ -5,6 +5,8 @@ import '../stylesheet/login-style.css'
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [clickIn, setCLickIn] = useState(false);
+
     const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
@@ -25,10 +27,12 @@ export default function Login() {
                 localStorage.setItem('authToken', data.token);
                 navigate('/app');
             } else {
+                setCLickIn(false)
                 alert(data.message || 'Login failed.');
             }
 
         } catch (error) {
+
             alert('An error occurred while logging in.');
         }
     }
@@ -36,7 +40,7 @@ export default function Login() {
     return (
 
         <section className='container'>
-            <div className='login-box'>
+            <div className='login-box animate__animated animate__fadeIn'>
                 <div className='logo-box'>
                     <svg className='logo-app' xmlns="http://www.w3.org/2000/svg" id="Capa_2" data-name="Capa 2" viewBox="0 0 330.01 302">
                         <path className="cls-2" fill='#00C2FF' d="m240.77,0l-106.83,26.71S39.5,1.95,8.23,39.73c0,0-31.92,48.85,29.96,168.06,0,0-16.28,53.41,20.19,59.93,0,0-45.53-41.79,31.33-79.57,0,0,11.01-5.76,22.08-3.8l-12.38-110.73L240.77,0Z" />
@@ -47,14 +51,26 @@ export default function Login() {
                     </h1>
                 </div>
                 <form className='login-form' onSubmit={handleSubmit}>
-                    <input className='input-email' type="text" placeholder='User' value={email} onChange={(e) => setEmail(e.target.value)} />
-                    <input className='input-email' type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} />
                     <a className='forget-pasword' href="">Olvidaste la contraseña?</a>
-                    <button className='b-singIn' type="submit">Ingresar</button>
-                </form>
-                <p className='redirect-register'>No tienes una cuenta? <a href="">RESGISTRARSE</a></p>
-            </div>
+                    {
+                        !clickIn
+                            ?
+                            <button onClick={() => setCLickIn(true)} className='b-singIn' type="submit">Ingresar</button>
 
+                            :
+                            <button className='b-singIn' type="submit">
+                                Cargando...
+                            </button>
+                    }
+                </form>
+                <p className='redirect-register'>No tienes una cuenta? 
+                    <span className='b-register' onClick={() => navigate('/register')}>
+                        REGISTRARSE
+                    </span>
+                </p>
+            </div>
         </section>
     );
 }
