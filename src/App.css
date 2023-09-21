@@ -76,6 +76,12 @@
         height: 100%;
         background: #222222;
       }
+      .songs-box-mobile {
+        display: none;
+      }
+      .panel-artist-mobile{
+        display: none;
+      }
 
 
       .rigth-panel-box {
@@ -351,11 +357,24 @@
         .rigth-panel-box {
           display: none;
         }
+        .songs-box {
+          display: none;
+        }
+
+        .songs-box-mobile {
+          display: flex;
+          flex: 1;
+          width: 75%;
+          height: 100%;
+          background: #222222;
+        }
         .panel-artist-mobile{
+          display: flex;
           width: 100vw;
-          height: calc(100vh - 45px - 102px);
+          height: calc(100vh - 40px - 102px);
           .artist-box-mobile{
             width: 100vw;
+            
             height: calc(100vh - 45px - 102px);
             display: flex;
             flex-direction: column;

@@ -141,13 +141,14 @@ export default function Songs(props) {
             )
             : (
                 <div className='songs-container'>
-                    <article className='song-box'>
-                        <div className='songs-artist-and-return'>
-                            <button onClick={handleToggle} className='b-return'>
+                    <button onClick={handleToggle} className='b-return'>
                                 <span className="material-symbols-outlined icon-return">
                                     keyboard_return
                                 </span>
                             </button>
+                    <article className='song-box'>
+                        <div className='songs-artist-and-return'>
+                            
                             <h2 style={{ color: '#00C2FF' }}><span>Canciones de </span> {artistName}</h2>
                         </div>
                         <div className='section-song'>

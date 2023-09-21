@@ -105,15 +105,13 @@ function App() {
                 </section>
                 <div className='container-song-artist'>
 
-                    {whatPanelIs == "panel-song" && (
-                        <div className='songs-box'>
-                            <Songs
-                                songArtist={selectedArtist}
-                                onSongClick={handleSongClick}
-                            />
-                        </div>
-                    )
-                    }
+                    <div className='songs-box'>
+                        <Songs
+                            songArtist={selectedArtist}
+                            onSongClick={handleSongClick}
+                        />
+                    </div>
+
 
                     <div className='rigth-panel-box'>
                         <div className='user-info-box'>
@@ -150,6 +148,18 @@ function App() {
                         </div>
 
                     </div>
+
+
+                    {/* Mobile Version */}
+                    {whatPanelIs == "panel-song" && (
+                        <div className='songs-box-mobile'>
+                            <Songs
+                                songArtist={selectedArtist}
+                                onSongClick={handleSongClick}
+                            />
+                        </div>
+                    )
+                    }
                     {
                         whatPanelIs == "panel-artist" && (
                             <div className='panel-artist-mobile'>
