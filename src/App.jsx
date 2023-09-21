@@ -34,13 +34,19 @@ function App() {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+
+        
     };
 
     const togglePanel = (option) => {
+        
         switch (option) {
             case "song-panel":
                 return () => {
                     setWhatPanelIs("panel-song");
+                    setSelectedArtist({
+                        artistName: 'default-song',
+                    })
                 };
             case "artist-panel":
                 return () => {
