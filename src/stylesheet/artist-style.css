@@ -85,14 +85,14 @@
 @media (max-width: 769px) {
     .input-name-artist {
         width: 95%;
-        height: 45px;
-        min-height: 45px;
+        height: 40px;
+        min-height: 40px;
         background: #1b1b1b;
     }
 
     .artist-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 10px), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 10px), 1fr));
         gap: 5px;
         padding: 20px 10px 50px 10px;
         justify-content: flex-start; /* Alinea las columnas al principio */

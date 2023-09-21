@@ -371,11 +371,12 @@
         .panel-artist-mobile{
           display: flex;
           width: 100vw;
-          height: calc(100vh - 40px - 102px);
+          height: calc(100vh - 10px - 102px);
+
           .artist-box-mobile{
             width: 100vw;
-            
-            height: calc(100vh - 45px - 102px);
+  
+            height: calc(100vh - 10px - 102px);
             display: flex;
             flex-direction: column;
             justify-content: center;
