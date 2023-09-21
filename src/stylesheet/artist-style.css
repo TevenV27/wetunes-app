@@ -81,3 +81,32 @@
         }
     }
 }
+
+@media (max-width: 769px) {
+    .input-name-artist {
+        width: 95%;
+        background: #1b1b1b;
+    }
+
+    .artist-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 10px), 1fr));
+        gap: 5px;
+        padding: 20px 10px 50px 10px;
+        justify-content: flex-start; /* Alinea las columnas al principio */
+        align-content: flex-start; /* Alinea las filas al principio */
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        .artist-card {
+            width: 100%;
+            height: 30px;
+
+            .name-artist {
+                font-size: 12px;
+            }
+        }
+    }
+}
+

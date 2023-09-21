@@ -9,9 +9,10 @@ function App() {
     const [selectedArtist, setSelectedArtist] = useState({
         artistName: 'default-song',
     });
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [whatPanelIs, setWhatPanelIs] = useState("panel-song");
+    const [panelArtistDesktop, setPanelArtistDesktop] = useState("panel-artist");
+
 
     const handleSongClick = (song) => {
         setSelectedSong({
@@ -26,10 +27,12 @@ function App() {
         setSelectedArtist({
             artistName: artist.nombre,
         });
+
+        setWhatPanelIs("panel-song");
     };
 
     const toggleMenu = () => {
-         setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen(!isMenuOpen);
     };
 
     const togglePanel = (option) => {
@@ -101,17 +104,17 @@ function App() {
                     )}
                 </section>
                 <div className='container-song-artist'>
-                    <div className='songs-box'>
-                        {whatPanelIs == "panel-song" && (
+
+                    {whatPanelIs == "panel-song" && (
+                        <div className='songs-box'>
                             <Songs
                                 songArtist={selectedArtist}
                                 onSongClick={handleSongClick}
                             />
-                        )
+                        </div>
+                    )
+                    }
 
-                        }
-
-                    </div>
                     <div className='rigth-panel-box'>
                         <div className='user-info-box'>
 
@@ -140,11 +143,25 @@ function App() {
                             )}
 
                         </div>
+
                         <div className='artist-box'>
                             <h2 className='title-artist'>ARTISTAS</h2>
                             <Artist onArtistClick={handleArtistClick} />
                         </div>
+
                     </div>
+                    {
+                        whatPanelIs == "panel-artist" && (
+                            <div className='panel-artist-mobile'>
+                                <div className='artist-box-mobile'>
+                                    <Artist onArtistClick={handleArtistClick} />
+                                </div>
+                            </div>
+                        )
+                    }
+
+
+
                 </div>
                 <div className='song-control'>
                     {selectedSong && (
