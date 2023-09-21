@@ -296,6 +296,7 @@
         .avatar-user{
           border-radius: 50%;
           width: 2.2rem;
+          cursor: pointer;
         }
         .user-menu {
           z-index: 1;
@@ -385,12 +386,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #f5f5f5;
+            color: #dedede;
+            cursor: pointer;
             .text-option{
               color: #fff;
               font-size: xx-small;
               font-weight: 300;
             }
+          }
+          .b-option:hover{
+            color: #ffffff;
           }
         }
       }

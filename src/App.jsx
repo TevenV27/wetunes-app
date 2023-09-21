@@ -11,6 +11,7 @@ function App() {
     });
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [whatPanelIs, setWhatPanelIs] = useState("panel-song");
 
     const handleSongClick = (song) => {
         setSelectedSong({
@@ -28,8 +29,29 @@ function App() {
     };
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+         setIsMenuOpen(!isMenuOpen);
     };
+
+    const togglePanel = (option) => {
+        switch (option) {
+            case "song-panel":
+                return () => {
+                    setWhatPanelIs("panel-song");
+                };
+            case "artist-panel":
+                return () => {
+                    setWhatPanelIs("panel-artist");
+                };
+            case "library-panel":
+                return () => {
+                    setWhatPanelIs("panel-library");
+                };
+            default:
+                break;
+        }
+    };
+
+
 
     return (
         <main className='main-container'>
@@ -80,10 +102,15 @@ function App() {
                 </section>
                 <div className='container-song-artist'>
                     <div className='songs-box'>
-                        <Songs
-                            songArtist={selectedArtist}
-                            onSongClick={handleSongClick}
-                        />
+                        {whatPanelIs == "panel-song" && (
+                            <Songs
+                                songArtist={selectedArtist}
+                                onSongClick={handleSongClick}
+                            />
+                        )
+
+                        }
+
                     </div>
                     <div className='rigth-panel-box'>
                         <div className='user-info-box'>
@@ -131,21 +158,21 @@ function App() {
                 </div>
                 <div className='navigation-mobile-controls'>
                     <div className='navigation-mobile-controls-box'>
-                        <span class="material-symbols-rounded b-option">
+                        <span onClick={togglePanel("song-panel")} className="material-symbols-rounded b-option">
                             home
                             <p className='text-option'>
                                 Inicio
                             </p>
                         </span>
 
-                        <span class="material-symbols-rounded b-option">
+                        <span onClick={togglePanel("artist-panel")} className="material-symbols-rounded b-option">
                             star
                             <p className='text-option'>
                                 Artistas
                             </p>
                         </span>
 
-                        <span class="material-symbols-rounded b-option">
+                        <span onClick={togglePanel("library-panel")} className="material-symbols-rounded b-option">
                             grading
                             <p className='text-option'>
                                 Biblioteca
