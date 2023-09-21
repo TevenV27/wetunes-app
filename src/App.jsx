@@ -20,6 +20,7 @@ function App() {
     const handleLogout = () => {
         localStorage.removeItem('authToken');
         navigate('/');
+        
     }
 
     const handleSongClick = (song) => {
@@ -81,7 +82,7 @@ function App() {
                     </div>
                     <hr className='line-split' />
                 </div>
-                <button onClick={handleLogout} className='b-close-session'>Cerrar Sesión</button>
+                {localStorage.getItem('authToken') && (<button onClick={handleLogout} className='b-close-session'>Cerrar Sesión</button>)}
             </section>
 
             <section className='section-section-artist'>
@@ -144,7 +145,7 @@ function App() {
                                         <span class="material-symbols-outlined">
                                             settings
                                         </span>Editar Perfil</button>
-                                    <button className='logout-button'>
+                                    <button onClick={handleLogout} className='logout-button'>
 
                                         Cerrar Sesión</button>
                                 </div>
