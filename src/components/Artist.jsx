@@ -44,7 +44,6 @@ export default function Artist(props) {
       />
 
       <div className='artist-container'>
-
         {filteredArtists.map((artist, artistIndex) => (
           <div className='artist-card' onClick={() => handleArtistClick(artist)} key={artistIndex}>
             <img className='img-artist' src={artist.imagen} alt="artist-image" />

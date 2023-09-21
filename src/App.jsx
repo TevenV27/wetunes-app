@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Songs from './components/Songs';
 import Artist from './components/Artist';
 import Reproductor from './components/Reproductor';
+import 'animate.css';
 import './App.css';
 
 function App() {
@@ -162,7 +163,7 @@ function App() {
                     }
                     {
                         whatPanelIs == "panel-artist" && (
-                            <div className='panel-artist-mobile'>
+                            <div className='panel-artist-mobile '>
                                 <div className='artist-box-mobile'>
                                     <Artist onArtistClick={handleArtistClick} />
                                 </div>

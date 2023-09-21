@@ -82,7 +82,7 @@ const Reproductor = ({ songName, songArtist, songImage, audioPath }) => {
   };
 
   return (
-    <div className="reproductor">
+    <div className="reproductor  animate__animated animate__fadeInUp ">
       <div className='information-song'>
         <div className='reproductor-imagen-box'>
           <img className="reproductor-imagen" src={songImage} alt={songName} />
