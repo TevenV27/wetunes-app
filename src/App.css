@@ -76,10 +76,12 @@
         height: 100%;
         background: #222222;
       }
+
       .songs-box-mobile {
         display: none;
       }
-      .panel-artist-mobile{
+
+      .panel-artist-mobile {
         display: none;
       }
 
@@ -178,7 +180,8 @@
       height: 70px;
       background: #101010;
     }
-    .navigation-mobile-controls{
+
+    .navigation-mobile-controls {
       display: none;
     }
 
@@ -282,10 +285,11 @@
         background: #1b1b1b;
         padding: 0px 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
+
         .container-logo-app {
           display: flex;
           align-items: center;
-          
+
           gap: 5px;
           padding: 5px 0px;
 
@@ -300,11 +304,12 @@
         }
 
 
-        .avatar-user{
+        .avatar-user {
           border-radius: 50%;
           width: 2.2rem;
           cursor: pointer;
         }
+
         .user-menu {
           z-index: 1;
           display: flex;
@@ -320,14 +325,14 @@
           gap: 10px;
           top: 50px;
           padding: 50px 0px;
-          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
           .logout-button {
             background: #00C2FF;
             border-radius: 5px;
             color: #101010;
             font-weight: 700;
-           
+
           }
 
           .edit-profile-button {
@@ -355,9 +360,11 @@
       .container-song-artist {
         height: 100vh;
         display: flex;
+
         .rigth-panel-box {
           display: none;
         }
+
         .songs-box {
           display: none;
         }
@@ -369,15 +376,19 @@
           height: 100%;
           background: #222222;
         }
-        .panel-artist-mobile{
+
+        .panel-artist-mobile {
           display: flex;
-          width: 100vw;
-          height: calc(100vh - 10px - 102px);
-          z-index: 1;
-          .artist-box-mobile{
-            width: 100vw;
+          width: 100%;
+          height: 100%;
+          padding-top: 55px ;
   
-            height: calc(100vh - 10px - 95px);
+          
+
+          .artist-box-mobile {
+            width: 100vw;
+
+            padding-bottom: 60px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -391,44 +402,69 @@
         background: none;
         width: 98%;
         height: 52px;
-        position: absolute;
+        position: fixed;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        
+
       }
+
       .navigation-mobile-controls {
         z-index: 10;
         display: flex;
         width: 100%;
         height: 50px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 50%;
         padding: 20px 0px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%,rgba(0, 0, 0, 0.8) 40%,rgba(0, 0, 0, 0.6) 60% ,rgba(0, 0, 0, 0.4) 80% ,rgba(0, 0, 0, 0.2) 90%,rgba(0, 0, 0, 0) 100%);
-      
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0) 100%);
+
         transform: translateX(-50%);
+
         .navigation-mobile-controls-box {
           width: 100%;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
+
           .b-option {
             font-size: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #dedede;
+
+        
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+
             cursor: pointer;
-            .text-option{
+
+            .text-option {
               color: #fff;
               font-size: xx-small;
               font-weight: 300;
             }
           }
-          .b-option:hover{
+
+          .b-option:active {
+            background-color: transparent;
+            outline: none;
+            box-shadow: none;
+          }
+
+          .b-option:hover {
             color: #ffffff;
           }
         }

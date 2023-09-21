@@ -35,31 +35,27 @@ function App() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
 
-        
+
     };
 
     const togglePanel = (option) => {
         
         switch (option) {
-            case "song-panel":
-                return () => {
-                    setWhatPanelIs("panel-song");
-                    setSelectedArtist({
-                        artistName: 'default-song',
-                    })
-                };
-            case "artist-panel":
-                return () => {
-                    setWhatPanelIs("panel-artist");
-                };
-            case "library-panel":
-                return () => {
-                    setWhatPanelIs("panel-library");
-                };
-            default:
-                break;
+          case "song-panel":
+            setWhatPanelIs("panel-song");
+            setSelectedArtist({ artistName: 'default-song' });
+            break;
+          case "artist-panel":
+            setWhatPanelIs("panel-artist");
+            break;
+          case "library-panel":
+            setWhatPanelIs("panel-library");
+            break;
+          default:
+            break;
         }
-    };
+      };
+      
 
 
 
@@ -192,21 +188,31 @@ function App() {
                 </div>
                 <div className='navigation-mobile-controls'>
                     <div className='navigation-mobile-controls-box'>
-                        <span onClick={togglePanel("song-panel")} className="material-symbols-rounded b-option">
+
+                        <span
+                            onClick={() => togglePanel("song-panel")}
+                            className="material-symbols-rounded b-option"
+                        >
                             home
                             <p className='text-option'>
                                 Inicio
                             </p>
                         </span>
 
-                        <span onClick={togglePanel("artist-panel")} className="material-symbols-rounded b-option">
+                        <span
+                            onClick={() => togglePanel("artist-panel")}
+                            className="material-symbols-rounded b-option"
+                        >
                             star
                             <p className='text-option'>
                                 Artistas
                             </p>
                         </span>
 
-                        <span onClick={togglePanel("library-panel")} className="material-symbols-rounded b-option">
+                        <span
+                            onClick={() => togglePanel("library-panel")}
+                            className= "material-symbols-rounded b-option"
+                        >
                             grading
                             <p className='text-option'>
                                 Biblioteca
