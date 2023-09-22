@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Songs from './components/Songs';
 import Artist from './components/Artist';
 import Reproductor from './components/Reproductor';
+
 import 'animate.css';
 import './App.css';
 
@@ -13,7 +15,12 @@ function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [whatPanelIs, setWhatPanelIs] = useState("panel-song");
     const [panelArtistDesktop, setPanelArtistDesktop] = useState("panel-artist");
+    const navigate = useNavigate();
 
+    const handleLogout = () => {
+        localStorage.removeItem('authToken');
+        navigate('/');
+    }
 
     const handleSongClick = (song) => {
         setSelectedSong({
@@ -74,7 +81,7 @@ function App() {
                     </div>
                     <hr className='line-split' />
                 </div>
-                <button className='b-close-session'>Cerrar Sesión</button>
+                <button onClick={handleLogout} className='b-close-session'>Cerrar Sesión</button>
             </section>
 
             <section className='section-section-artist'>
@@ -100,7 +107,7 @@ function App() {
                                 <span className="material-symbols-outlined">
                                     settings
                                 </span>Editar Perfil</button>
-                            <button className='logout-button'>
+                            <button onClick={handleLogout} className='logout-button'>
 
                                 Cerrar Sesión</button>
                         </div>
