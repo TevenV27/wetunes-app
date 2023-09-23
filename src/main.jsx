@@ -21,10 +21,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
     <Router>
       <Routes>
-        <Route path="/app" element={<ProtectedRoute><App /></ProtectedRoute>} />
+        <Route path="/" element={<ProtectedRoute><App /></ProtectedRoute>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/*" element={<Navigate to="/app" />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   </React.StrictMode>,

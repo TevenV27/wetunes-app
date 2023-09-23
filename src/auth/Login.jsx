@@ -31,7 +31,7 @@ export default function Login() {
                 // También puedes guardar el token en localStorage si es necesario
                 localStorage.setItem('authToken', data.token);
     
-                navigate('/app');
+                navigate('/');
             } else {
                 setCLickIn(false);
                 alert(data.message || 'Login failed.');
