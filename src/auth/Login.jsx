@@ -12,6 +12,10 @@ export default function Login() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        const loginData = {
+            email: email,
+            password: password
+        }
     
         try {
             const response = await fetch('https://wetunes-api.onrender.com/api/login', {
@@ -19,7 +23,7 @@ export default function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email: email, password }),
+                body: JSON.stringify(loginData),
             });
     
             const data = await response.json();

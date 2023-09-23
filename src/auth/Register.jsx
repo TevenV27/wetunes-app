@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import Cookies from 'js-cookie';
 
 export default function Register() {
   const [firstName, setFirstName] = useState('')
@@ -14,6 +14,12 @@ export default function Register() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const registerData = {
+      firstname: firstName,
+      lastname: lastName,
+      email: email,
+      password: password
+    };
 
     try {
       const response = await fetch('https://wetunes-api.onrender.com/api/register', {
@@ -21,21 +27,23 @@ export default function Register() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ firstName, lastName, email: email, password }),
+        body: JSON.stringify(registerData),
       });
 
       const data = await response.json();
-
+      console.log(data);
       if (data.token) {
+        Cookies.set('authToken', data.token, { expires: 7 });
         localStorage.setItem('authToken', data.token);
         navigate('/app');
       } else {
         setCLickIn(false)
         alert(data.message || 'Login failed.');
+       
       }
 
     } catch (error) {
-
+      console.log(error);
       alert('An error occurred while logging in.');
     }
   }
