@@ -7,8 +7,10 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import './index.css'
 
 function ProtectedRoute({ children }) {
-  if (!localStorage.getItem('authToken')) {
-    return <Navigate to="/" />;
+  const authToken = localStorage.getItem('authToken') || document.cookie.replace(/(?:(?:^|.*;\s*)authToken\s*=\s*([^;]*).*$)|^.*$/, "$1");
+
+  if (!authToken) {
+    return <Navigate to="/login" />;
   }
 
   return children;
@@ -16,12 +18,13 @@ function ProtectedRoute({ children }) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    
     <Router>
       <Routes>
         <Route path="/app" element={<ProtectedRoute><App /></ProtectedRoute>} />
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/*" element={<Navigate to="/" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/*" element={<Navigate to="/app" />} />
       </Routes>
     </Router>
   </React.StrictMode>,

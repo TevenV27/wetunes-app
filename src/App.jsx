@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Songs from './components/Songs';
 import Artist from './components/Artist';
 import Reproductor from './components/Reproductor';
+import Cookies from 'js-cookie';
 
 import 'animate.css';
 import './App.css';
@@ -18,8 +19,9 @@ function App() {
     const navigate = useNavigate();
 
     const handleLogout = () => {
+        Cookies.remove('authToken');
         localStorage.removeItem('authToken');
-        navigate('/');
+        navigate('/login');
         
     }
 

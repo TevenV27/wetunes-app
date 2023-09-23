@@ -84,7 +84,7 @@ export default function Songs(props) {
                                 <input
                                     className='input-song-name'
                                     type="text"
-                                    placeholder='Nombre de la Canción...'
+                                    placeholder='Nombre de la canción...'
                                     value={searchText}
                                     onChange={(e) => setSearchText(e.target.value)}
                                 />

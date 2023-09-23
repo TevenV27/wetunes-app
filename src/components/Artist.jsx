@@ -38,7 +38,7 @@ export default function Artist(props) {
       <input
         className='input-name-artist'
         type="text"
-        placeholder='Nombre del Artista...'
+        placeholder='Nombre del artista...'
         value={searchText}
         onChange={handleSearchInputChange}
       />

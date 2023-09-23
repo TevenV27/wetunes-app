@@ -112,4 +112,26 @@ input {
             }
         }
     }
+    .by-teven{
+        position: absolute;
+        left: center;
+        bottom: 0;
+        font-size: smaller;
+        color: #4e4e4ed0;
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 769px) {
+
+    .container{
+
+        .login-box{
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+
+    
 }

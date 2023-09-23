@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import '../stylesheet/login-style.css'
 
 export default function Login() {
@@ -11,7 +12,7 @@ export default function Login() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
+    
         try {
             const response = await fetch('https://wetunes-api.onrender.com/api/login', {
                 method: 'POST',
@@ -20,19 +21,22 @@ export default function Login() {
                 },
                 body: JSON.stringify({ email: email, password }),
             });
-
+    
             const data = await response.json();
-
+    
             if (data.token) {
+                // Almacena el token en una cookie con una fecha de expiración
+                Cookies.set('authToken', data.token, { expires: 7 }); // Caduca en 7 días
+    
+                // También puedes guardar el token en localStorage si es necesario
                 localStorage.setItem('authToken', data.token);
+    
                 navigate('/app');
             } else {
-                setCLickIn(false)
+                setCLickIn(false);
                 alert(data.message || 'Login failed.');
             }
-
         } catch (error) {
-
             alert('An error occurred while logging in.');
         }
     }
@@ -71,6 +75,8 @@ export default function Login() {
                     </span>
                 </p>
             </div>
+
+            <span className='by-teven'>By Teven</span>
         </section>
     );
 }
