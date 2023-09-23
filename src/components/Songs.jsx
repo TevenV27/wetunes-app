@@ -21,6 +21,13 @@ export default function Songs(props) {
         setTogleRender(songArtist);
     }, [songArtist]);
 
+    useEffect(() => {
+        // Simula una carga ficticia con un retardo de 2 segundos (puedes ajustar esto)
+        setTimeout(() => {
+          setIsLoaded(true); // Cuando la carga está completa, actualiza isLoaded a true
+        }, 500); // 2 segundos de retardo (ajusta según tus necesidades)
+      }, []); 
+
     const memoizedFilteredSongs = useMemo(() => {
         return filteredSongs();
     }, [searchText, songsData]);
