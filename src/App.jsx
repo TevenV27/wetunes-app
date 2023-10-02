@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Songs from './components/Songs';
 import Artist from './components/Artist';
@@ -9,6 +9,7 @@ import 'animate.css';
 import './App.css';
 
 function App() {
+
     const [selectedSong, setSelectedSong] = useState(null);
     const [selectedArtist, setSelectedArtist] = useState({
         artistName: 'default-song',
@@ -16,13 +17,18 @@ function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [whatPanelIs, setWhatPanelIs] = useState("panel-song");
     const [panelArtistDesktop, setPanelArtistDesktop] = useState("panel-artist");
+
     const navigate = useNavigate();
+
+    const userDataJSON = Cookies.get('userData');
+    const userData = JSON.parse(userDataJSON);
 
     const handleLogout = () => {
         Cookies.remove('authToken');
+        Cookies.remove('userData');
         localStorage.removeItem('authToken');
         navigate('/login');
-        
+
     }
 
     const handleSongClick = (song) => {
@@ -48,25 +54,25 @@ function App() {
 
     };
 
-    const togglePanel = (option) => {
-        
-        switch (option) {
-          case "song-panel":
-            setWhatPanelIs("panel-song");
-            setSelectedArtist({ artistName: 'default-song' });
-            break;
-          case "artist-panel":
-            setWhatPanelIs("panel-artist");
-            break;
-          case "library-panel":
-            setWhatPanelIs("panel-library");
-            break;
-          default:
-            break;
-        }
-      };
-      
 
+
+    const togglePanel = (option) => {
+
+        switch (option) {
+            case "song-panel":
+                setWhatPanelIs("panel-song");
+                setSelectedArtist({ artistName: 'default-song' });
+                break;
+            case "artist-panel":
+                setWhatPanelIs("panel-artist");
+                break;
+            case "library-panel":
+                setWhatPanelIs("panel-library");
+                break;
+            default:
+                break;
+        }
+    };
 
 
     return (
@@ -100,12 +106,18 @@ function App() {
                     </div>
                     <img
                         className='avatar-user'
-                        src="https://static.vecteezy.com/system/resources/previews/009/267/561/original/user-icon-design-free-png.png"
+                        src={`https://wetunes-api.onrender.com/images/${userData.avataruser}`}
                         alt=""
                         onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
                     />
                     {isMenuOpen && (
                         <div className='user-menu'>
+                            <h1
+                                className='name-user'
+
+                            >
+                                <span style={{ color: "#00C2FF" }}>{userData.firstname}</span> {userData.lastname}
+                            </h1>
                             <button className='edit-profile-button'>
                                 <span className="material-symbols-outlined">
                                     settings
@@ -133,11 +145,11 @@ function App() {
                                 className='name-user'
 
                             >
-                                <span style={{ color: "#00C2FF" }}>Steven</span> Victoria
+                                <span style={{ color: "#00C2FF" }}>{userData.firstname}</span> {userData.lastname}
                             </span>
                             <img
                                 className='avatar-user'
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyz-77X11MoGE22xVjjPhbpW6lPj6I0SkcTQ&usqp=CAU"
+                                src={`https://wetunes-api.onrender.com/images/${userData.avataruser}`}
                                 alt=""
                                 onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
                             />
@@ -221,7 +233,7 @@ function App() {
 
                         <span
                             onClick={() => togglePanel("library-panel")}
-                            className= "material-symbols-rounded b-option"
+                            className="material-symbols-rounded b-option"
                         >
                             grading
                             <p className='text-option'>

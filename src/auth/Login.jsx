@@ -16,7 +16,7 @@ export default function Login() {
             email: email,
             password: password
         }
-    
+
         try {
             const response = await fetch('https://wetunes-api.onrender.com/api/login', {
                 method: 'POST',
@@ -25,16 +25,28 @@ export default function Login() {
                 },
                 body: JSON.stringify(loginData),
             });
-    
+
             const data = await response.json();
-    
+
             if (data.token) {
-                // Almacena el token en una cookie con una fecha de expiración
-                Cookies.set('authToken', data.token, { expires: 7 }); // Caduca en 7 días
-    
-                // También puedes guardar el token en localStorage si es necesario
+
+                Cookies.set('authToken', data.token, { expires: 7 });
+
+                const userData = {
+                    email: data.email,
+                    firstname: data.firstname,
+                    lastname: data.lastname,
+                    avataruser: data.avataruser
+                };
+
+                // Convertir el objeto a una cadena JSON
+                const userDataJSON = JSON.stringify(userData);
+                // Establecer la cookie con la cadena JSON
+                Cookies.set('userData', userDataJSON, { expires: 7 });
+
+         
                 localStorage.setItem('authToken', data.token);
-    
+
                 navigate('/');
             } else {
                 setCLickIn(false);
@@ -73,7 +85,7 @@ export default function Login() {
                             </button>
                     }
                 </form>
-                <p className='redirect-register'>No tienes una cuenta? 
+                <p className='redirect-register'>No tienes una cuenta?
                     <span className='b-register' onClick={() => navigate('/register')}>
                         REGISTRARSE
                     </span>

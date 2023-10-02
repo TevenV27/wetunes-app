@@ -9,6 +9,7 @@ import './index.css'
 function ProtectedRoute({ children }) {
   const authToken = localStorage.getItem('authToken') || document.cookie.replace(/(?:(?:^|.*;\s*)authToken\s*=\s*([^;]*).*$)|^.*$/, "$1");
 
+  
   if (!authToken) {
     return <Navigate to="/login" />;
   }

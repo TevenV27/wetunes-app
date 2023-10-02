@@ -34,12 +34,23 @@ export default function Register() {
       console.log(data);
       if (data.token) {
         Cookies.set('authToken', data.token, { expires: 7 });
+        const userData = {
+          email: data.email,
+          firstname: data.firstname,
+          lastname: data.lastname,
+          avataruser: data.avataruser
+        };
+
+        // Convertir el objeto a una cadena JSON
+        const userDataJSON = JSON.stringify(userData);
+        // Establecer la cookie con la cadena JSON
+        Cookies.set('userData', userDataJSON,{ expires: 7 });
         localStorage.setItem('authToken', data.token);
         navigate('/app');
       } else {
         setCLickIn(false)
         alert(data.message || 'Login failed.');
-       
+
       }
 
     } catch (error) {
