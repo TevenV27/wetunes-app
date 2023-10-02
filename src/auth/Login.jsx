@@ -94,9 +94,9 @@ export default function Login() {
                     </h1>
                 </div>
                 <form className='login-form' onSubmit={handleSubmit}>
-                    <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleEmailClick} />
+                    <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleEmailClick} required/>
                     {error && <p className="error-message">{error}</p>}
-                    <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} required/>
                     <a className='forget-pasword' href="">Olvidaste la contraseña?</a>
                     {loading ? (
                         <ClipLoader color="#00C2FF" loading={loading} size={40} />

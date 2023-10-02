@@ -81,11 +81,11 @@ export default function Register() {
         </div>
         <form className='login-form' onSubmit={handleSubmit}>
           <div className='box-names'>
-            <input className='input-firstName' type="text" placeholder='Nombre' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-            <input className='input-lastName' type="text" placeholder='Apellido' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+            <input className='input-firstName' type="text" placeholder='Nombre' value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+            <input className='input-lastName' type="text" placeholder='Apellido' value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
           </div>
-          <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} />
-          <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} required/>
+          <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} required />
           {loading ? (
             <ClipLoader color="#00C2FF" loading={loading} size={40} />
           ) : (
