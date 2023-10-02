@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
+import { ClipLoader } from "react-spinners";
 
 export default function Register() {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const [clickIn, setCLickIn] = useState(false);
 
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
     const registerData = {
       firstname: firstName,
       lastname: lastName,
@@ -31,7 +33,7 @@ export default function Register() {
       });
 
       const data = await response.json();
-      console.log(data);
+
       if (data.token) {
         Cookies.set('authToken', data.token, { expires: 7 });
         const userData = {
@@ -44,11 +46,11 @@ export default function Register() {
         // Convertir el objeto a una cadena JSON
         const userDataJSON = JSON.stringify(userData);
         // Establecer la cookie con la cadena JSON
-        Cookies.set('userData', userDataJSON,{ expires: 7 });
+        Cookies.set('userData', userDataJSON, { expires: 7 });
         localStorage.setItem('authToken', data.token);
         navigate('/app');
       } else {
-        setCLickIn(false)
+
         alert(data.message || 'Login failed.');
 
       }
@@ -56,6 +58,11 @@ export default function Register() {
     } catch (error) {
       console.log(error);
       alert('An error occurred while logging in.');
+    }
+    finally {
+
+      // Ocultar el spinner después de la carga
+      setLoading(false);
     }
   }
 
@@ -79,16 +86,11 @@ export default function Register() {
           </div>
           <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} />
           <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} />
-          {
-            !clickIn
-              ?
-              <button onClick={() => setCLickIn(true)} className='b-singIn' type="submit">Registrarse</button>
-
-              :
-              <button className='b-singIn' type="submit">
-                Cargando...
-              </button>
-          }
+          {loading ? (
+            <ClipLoader color="#00C2FF" loading={loading} size={40} />
+          ) : (
+            <button className='b-singIn' type="submit">Ingresar</button>
+          )}
         </form>
 
         <span className='b-return-login' onClick={() => navigate('/')}>

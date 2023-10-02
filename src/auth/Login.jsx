@@ -1,17 +1,39 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import '../stylesheet/login-style.css'
+import '../stylesheet/login-style.css';
+import { css } from "@emotion/react";
+import { ClipLoader } from "react-spinners";
 
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [clickIn, setCLickIn] = useState(false);
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
 
+    // Validador de correo electrónico
+    const isEmailValid = (email) => {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+    }
+
+    // Manejador de clic en el campo de correo electrónico para limpiar el mensaje de error
+    const handleEmailClick = () => {
+        setError('');
+    }
+
     const handleSubmit = async (event) => {
         event.preventDefault();
+
+        if (!isEmailValid(email)) {
+            setError('Correo electrónico no válido');
+            return;
+        }
+
+        setLoading(true); // Mostrar el spinner mientras se carga
+
         const loginData = {
             email: email,
             password: password
@@ -44,21 +66,22 @@ export default function Login() {
                 // Establecer la cookie con la cadena JSON
                 Cookies.set('userData', userDataJSON, { expires: 7 });
 
-         
                 localStorage.setItem('authToken', data.token);
 
                 navigate('/');
             } else {
-                setCLickIn(false);
                 alert(data.message || 'Login failed.');
             }
         } catch (error) {
             alert('An error occurred while logging in.');
+        } finally {
+            
+            // Ocultar el spinner después de la carga
+            setLoading(false); 
         }
     }
 
     return (
-
         <section className='container'>
             <div className='login-box animate__animated animate__fadeIn'>
                 <div className='logo-box'>
@@ -71,19 +94,15 @@ export default function Login() {
                     </h1>
                 </div>
                 <form className='login-form' onSubmit={handleSubmit}>
-                    <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input className='input-email' type="text" placeholder='User' value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleEmailClick} />
+                    {error && <p className="error-message">{error}</p>}
                     <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} />
                     <a className='forget-pasword' href="">Olvidaste la contraseña?</a>
-                    {
-                        !clickIn
-                            ?
-                            <button onClick={() => setCLickIn(true)} className='b-singIn' type="submit">Ingresar</button>
-
-                            :
-                            <button className='b-singIn' type="submit">
-                                Cargando...
-                            </button>
-                    }
+                    {loading ? (
+                        <ClipLoader color="#00C2FF" loading={loading} size={40} />
+                    ) : (
+                        <button className='b-singIn' type="submit">Ingresar</button>
+                    )}
                 </form>
                 <p className='redirect-register'>No tienes una cuenta?
                     <span className='b-register' onClick={() => navigate('/register')}>
@@ -91,7 +110,6 @@ export default function Login() {
                     </span>
                 </p>
             </div>
-
             <span className='by-teven'>By Teven</span>
         </section>
     );
