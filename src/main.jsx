@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Login from './auth/Login.jsx'
 import Register from './auth/Register.jsx'
+import Cookies from 'js-cookie';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './index.css'
 
 function ProtectedRoute({ children }) {
   const authToken = localStorage.getItem('authToken') || document.cookie.replace(/(?:(?:^|.*;\s*)authToken\s*=\s*([^;]*).*$)|^.*$/, "$1");
-
+  const userData = Cookies.get('userData')
   
-  if (!authToken) {
+  if (!authToken && !userData) {
     return <Navigate to="/login" />;
   }
 
