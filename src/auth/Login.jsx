@@ -75,7 +75,7 @@ export default function Login() {
         } catch (error) {
             alert('An error occurred while logging in.');
         } finally {
-            
+
             // Ocultar el spinner después de la carga
             setLoading(false); 
         }
@@ -94,7 +94,7 @@ export default function Login() {
                     </h1>
                 </div>
                 <form className='login-form' onSubmit={handleSubmit}>
-                    <input className='input-email' type="text" placeholder='User' value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleEmailClick} />
+                    <input className='input-email' type="text" placeholder='Correo' value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleEmailClick} />
                     {error && <p className="error-message">{error}</p>}
                     <input className='input-email' type="password" placeholder='Contraseña' value={password} onChange={(e) => setPassword(e.target.value)} />
                     <a className='forget-pasword' href="">Olvidaste la contraseña?</a>
