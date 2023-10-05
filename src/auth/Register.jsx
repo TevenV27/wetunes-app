@@ -47,7 +47,6 @@ export default function Register() {
         const userDataJSON = JSON.stringify(userData);
         // Establecer la cookie con la cadena JSON
         Cookies.set('userData', userDataJSON, { expires: 7 });
-        localStorage.setItem('authToken', data.token);
         navigate('/app');
       } else {
 

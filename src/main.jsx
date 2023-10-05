@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import './index.css'
 
 function ProtectedRoute({ children }) {
-  const authToken = localStorage.getItem('authToken') || document.cookie.replace(/(?:(?:^|.*;\s*)authToken\s*=\s*([^;]*).*$)|^.*$/, "$1");
+  const authToken = Cookies.get('authToken')
   const userData = Cookies.get('userData')
   
   if (!authToken && !userData) {

@@ -5,43 +5,38 @@ import Artist from './components/Artist';
 import Reproductor from './components/Reproductor';
 import Cookies from 'js-cookie';
 import EditProfile from './components/EditProfile';
-
 import 'animate.css';
 import './App.css';
 
 function App() {
 
     const [selectedSong, setSelectedSong] = useState(null);
-    const [selectedArtist, setSelectedArtist] = useState({
-        artistName: 'default-song',
-    });
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [whatPanelIs, setWhatPanelIs] = useState("panel-song");
     const [open, setOpen] = useState(false);
     const [user, setUser] = useState({});
-
-    const navigate = useNavigate();
     const userDataJSON = Cookies.get('userData');
+    const [selectedArtist, setSelectedArtist] = useState({
+        artistName: 'default-song',
+    });
     const userData = JSON.parse(userDataJSON);
+    const navigate = useNavigate();
 
 
     useEffect(() => {
         fetch(`https://wetunes-api.onrender.com/api/users/${userData.email}`)
-          .then((response) => response.json())
-          .then((data) => {
-            setUser(data);
-            console.log(user)
-          });
-      }, []);
+            .then((response) => response.json())
+            .then((data) => {
+                setUser(data);
+            });
+    }, []);
 
 
 
     const handleLogout = () => {
         Cookies.remove('authToken');
         Cookies.remove('userData');
-        localStorage.removeItem('authToken');
         navigate('/login');
-
     }
 
     const handleSongClick = (song) => {
@@ -108,7 +103,7 @@ function App() {
                     </div>
                     <hr className='line-split' />
                 </div>
-                {localStorage.getItem('authToken') && (<button onClick={handleLogout} className='b-close-session'>Cerrar Sesión</button>)}
+                <button onClick={handleLogout} className='b-close-session'>Cerrar Sesión</button>
             </section>
 
             <section className='section-section-artist'>
@@ -125,7 +120,7 @@ function App() {
                     <div>
                         <img
                             className='avatar-user'
-                            src={`https://wetunes-api.onrender.com/images/${userData.avataruser}`}
+                            src={`https://wetunes-api.onrender.com/images/${user.avataruser}`}
                             alt=""
                             onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
                         />
@@ -166,11 +161,11 @@ function App() {
                                 className='name-user'
 
                             >
-                                <span style={{ color: "#00C2FF" }}>{userData.firstname}</span> {userData.lastname}
+                                <span style={{ color: "#00C2FF" }}>{user.firstname}</span> {user.lastname}
                             </span>
                             <img
                                 className='avatar-user'
-                                src={`https://wetunes-api.onrender.com/images/${userData.avataruser}`}
+                                src={`https://wetunes-api.onrender.com/images/${user.avataruser}`}
                                 alt=""
                                 onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
                             />
@@ -219,6 +214,7 @@ function App() {
 
 
                 </div>
+
                 <div className='song-control'>
                     {selectedSong && (
                         <Reproductor
@@ -229,6 +225,7 @@ function App() {
                         />
                     )}
                 </div>
+
                 <div className='navigation-mobile-controls'>
                     <div className='navigation-mobile-controls-box'>
 
@@ -264,10 +261,11 @@ function App() {
                     </div>
                 </div>
             </section>
+
             {/* Modal de configuración */}
             {
                 open && (
-                    <EditProfile handleOpen={open} closeModal={handleClose} data={user}/>
+                    <EditProfile handleOpen={open} closeModal={handleClose} data={user} />
                 )
             }
 
