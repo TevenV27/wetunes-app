@@ -125,7 +125,7 @@ export default function Songs(props) {
                                                             song.isLike = !song.isLike;
                                                             setSongsData([...songsData]);
                                                         }}
-                                                        className="material-icons like-button"
+                                                        className="material-symbols-rounded like-button"
                                                     >
                                                         favorite
                                                     </span>
@@ -194,7 +194,7 @@ export default function Songs(props) {
                                                 song.isLike = !song.isLike;
                                                 setSongsData([...songsData]);
                                             }}
-                                            className="material-icons">
+                                            className="material-symbols-rounded">
                                             favorite
                                         </span>
                                     </div>
