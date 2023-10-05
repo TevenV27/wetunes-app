@@ -205,33 +205,58 @@ p {
         position: relative;
         width: 200px;
         height: 200px;
+
+        .play-song-icon {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+        }
+    
+        .play-song-icon:active {
+            background-color: transparent;
+            outline: none;
+            box-shadow: none;
+        }
     }
 
-    .play-song-icon {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 80px;
-        -webkit-tap-highlight-color: transparent;
-        -webkit-touch-callout: none;
-        /* iOS Safari */
-        -webkit-user-select: none;
-        /* Safari */
-        -khtml-user-select: none;
-        /* Konqueror HTML */
-        -moz-user-select: none;
-        /* Firefox */
-        -ms-user-select: none;
-        /* Internet Explorer/Edge */
-        user-select: none;
-    }
+    
 
-    .play-song-icon:active {
-        background-color: transparent;
-        outline: none;
-        box-shadow: none;
+
+    .img-song-box:hover {
+        .img-song {
+            filter: blur(0.9px) brightness(40%);
+        }
+        .play-song-icon {
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
+            transform-origin: center;
+            /* Establece el punto de origen al centro */
+        }
+    
+        .play-song-icon:hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+    
+            color: #00C2FF;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
     }
 
 
@@ -240,28 +265,7 @@ p {
 .card-song:hover {
     background-color: #2e2e2e;
 
-    .img-song-box {
-        .img-song {
-            filter: blur(0.9px) brightness(40%);
-        }
-    }
-
-    .play-song-icon {
-        display: block;
-        cursor: pointer;
-        transition: transform 0.3s ease, color 0.3s ease;
-        transform-origin: center;
-        /* Establece el punto de origen al centro */
-    }
-
-    .play-song-icon:hover {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        color: #00C2FF;
-        transform: translate(-50%, -50%) scale(1.1);
-    }
+    
 }
 
 .card-song:active {
