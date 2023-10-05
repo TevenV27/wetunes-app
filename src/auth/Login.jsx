@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import '../stylesheet/login-style.css';
-import { css } from "@emotion/react";
 import { ClipLoader } from "react-spinners";
 
 export default function Login() {

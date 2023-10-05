@@ -4,6 +4,7 @@ import Songs from './components/Songs';
 import Artist from './components/Artist';
 import Reproductor from './components/Reproductor';
 import Cookies from 'js-cookie';
+import EditProfile from './components/EditProfile';
 
 import 'animate.css';
 import './App.css';
@@ -16,12 +17,24 @@ function App() {
     });
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [whatPanelIs, setWhatPanelIs] = useState("panel-song");
-    const [panelArtistDesktop, setPanelArtistDesktop] = useState("panel-artist");
+    const [open, setOpen] = useState(false);
+    const [user, setUser] = useState({});
 
     const navigate = useNavigate();
-
     const userDataJSON = Cookies.get('userData');
     const userData = JSON.parse(userDataJSON);
+
+
+    useEffect(() => {
+        fetch(`https://wetunes-api.onrender.com/api/users/${userData.email}`)
+          .then((response) => response.json())
+          .then((data) => {
+            setUser(data);
+            console.log(user)
+          });
+      }, []);
+
+
 
     const handleLogout = () => {
         Cookies.remove('authToken');
@@ -51,9 +64,15 @@ function App() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
 
-
     };
 
+    const handleOpen = () => {
+        setOpen(true)
+    }
+
+    const handleClose = (type) => {
+        setOpen(type)
+    }
 
 
     const togglePanel = (option) => {
@@ -73,7 +92,6 @@ function App() {
                 break;
         }
     };
-
 
     return (
         <main className='main-container'>
@@ -104,12 +122,15 @@ function App() {
                             <span style={{ color: "#00C2FF" }}>We</span>Tunes
                         </h1>
                     </div>
-                    <img
-                        className='avatar-user'
-                        src={`https://wetunes-api.onrender.com/images/${userData.avataruser}`}
-                        alt=""
-                        onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
-                    />
+                    <div>
+                        <img
+                            className='avatar-user'
+                            src={`https://wetunes-api.onrender.com/images/${userData.avataruser}`}
+                            alt=""
+                            onClick={toggleMenu} // Agrega el evento onClick para abrir/cerrar el menú
+                        />
+                    </div>
+
                     {isMenuOpen && (
                         <div className='user-menu'>
                             <h1
@@ -118,7 +139,7 @@ function App() {
                             >
                                 <span style={{ color: "#00C2FF" }}>{userData.firstname}</span> {userData.lastname}
                             </h1>
-                            <button className='edit-profile-button'>
+                            <button onClick={handleOpen} className='edit-profile-button'>
                                 <span className="material-symbols-outlined">
                                     settings
                                 </span>Editar Perfil</button>
@@ -155,8 +176,8 @@ function App() {
                             />
                             {isMenuOpen && (
                                 <div className='user-menu'>
-                                    <button className='edit-profile-button'>
-                                        <span class="material-symbols-outlined">
+                                    <button onClick={handleOpen} className='edit-profile-button'>
+                                        <span className="material-symbols-outlined">
                                             settings
                                         </span>Editar Perfil</button>
                                     <button onClick={handleLogout} className='logout-button'>
@@ -243,6 +264,14 @@ function App() {
                     </div>
                 </div>
             </section>
+            {/* Modal de configuración */}
+            {
+                open && (
+                    <EditProfile handleOpen={open} closeModal={handleClose} data={user}/>
+                )
+            }
+
+
         </main>
     );
 }
