@@ -189,7 +189,7 @@ export default function Songs(props) {
                                             </p>
                                         </div>
                                         <span
-                                            style={{ color: song.isLike ? '#616161' : '#424242' }}
+                                            style={{ color: song.isLike ? '#00C2FF' : '#424242' }}
                                             onClick={() => {
                                                 song.isLike = !song.isLike;
                                                 setSongsData([...songsData]);
