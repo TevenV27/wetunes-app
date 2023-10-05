@@ -19,8 +19,6 @@ function App() {
     const [selectedArtist, setSelectedArtist] = useState({
         artistName: 'default-song',
     });
-    const [startY, setStartY] = useState(null); // Agregar estado para la posición de inicio del toque
-    const refreshThreshold = 100;
     const userData = JSON.parse(userDataJSON);
     const navigate = useNavigate();
 
@@ -32,40 +30,6 @@ function App() {
                 setUser(data);
             });
     }, []);
-
-    const handleTouchStart = (event) => {
-        const touch = event.touches[0];
-        setStartY(touch.clientY);
-    };
-
-    const handleTouchEnd = (event) => {
-        if (startY !== null) {
-            const touch = event.changedTouches[0];
-            const deltaY = touch.clientY - startY;
-
-            if (deltaY > refreshThreshold) {
-                // El usuario cruzó el umbral, recarga la página
-                window.location.reload();
-            }
-        }
-    };
-    function isMobileDevice() {
-        return /Mobi|Android/i.test(navigator.userAgent);
-    }
-
-    useEffect(() => {
-        // Agregar eventos de escucha táctil cuando el componente se monte
-        if (isMobileDevice()) {
-            window.addEventListener('touchstart', handleTouchStart);
-            window.addEventListener('touchend', handleTouchEnd);
-        }
-
-        return () => {
-            // Eliminar eventos de escucha táctil cuando el componente se desmonte
-            window.removeEventListener('touchstart', handleTouchStart);
-            window.removeEventListener('touchend', handleTouchEnd);
-        };
-    }, [startY]);
 
     const handleLogout = () => {
         Cookies.remove('authToken');
