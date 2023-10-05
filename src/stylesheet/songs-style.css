@@ -453,15 +453,20 @@ p {
     }
 
     .description-song {
+        align-items: start;
         .song-info {
             .song-name {
-                font-size: 12px;
+                font-size: 10px;
             }
 
             .artist-name {
                 font-size: 8px;
             }
 
+        }
+        .like-button{
+            margin-top: 3px;
+            
         }
 
     }
